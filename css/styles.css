@@ -7,6 +7,20 @@
     src: url('../fonts/saiyan_sans/Saiyan-Sans%20Right%20Oblique.ttf') format('truetype');
 }
 
+/* CSS Navbar */
+
+.main_nav {
+    display: flex; /* Active le mode Flexbox pour la navbar */
+    justify-content: space-between; /* Répartit l'espace entre les éléments */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 1rem 2rem; /* Ajoute de l'espace autour des éléments *//* Couleur du texte blanche */
+}
+
+.main-nav__logo img{
+    max-width: 200px;
+
+}
+
 h1 {
     display: flex; /* Active le mode Flexbox pour le h1 */
     justify-content: flex-start; /* Répartit l'espace entre les éléments */
