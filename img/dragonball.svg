@@ -6,7 +6,6 @@
     </clipPath>
   </defs>
   <g transform="matrix(1.3333333,0,0,-1.3333333,0,1333.3333)" id="g10">
-    <path id="path12" style="fill-opacity: 1; fill-rule: nonzero; stroke: none; fill: rgb(255, 255, 255);" d="M 0,0 H 1000 V 1000 H 0 Z"/>
     <g id="g14">
       <g clip-path="url(#clipPath20)" id="g16">
         <path id="path22" style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" d="M 1074,-18 H -74 v 1036 h 1148 z"/>
