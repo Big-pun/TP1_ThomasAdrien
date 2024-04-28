@@ -31,7 +31,34 @@
 
     <div class="container">
         <main>
-            <!-- Carousel -->
+            <!-- Carousel 3 images -->
+            <!-- Container principal du carousel -->
+            <div class="carousel__container">
+                <!-- Bouton gauche -->
+                <a class="carousel__button carousel__button--left">&#10094;</a>
+
+                <!-- Container des images -->
+                <div class="carousel__slides fade">
+                    <img src="img/DBZ.jpeg" alt="Goku" width="90%" />
+                </div>
+                <div class="carousel__slides fade">
+                    <img src="img/DBZ.jpeg" alt="Vegeta" width="90%" />
+                </div>
+                <div class="carousel__slides fade">
+                    <img src="img/DBZ.jpeg" alt="Gohan" width="90%" />
+                </div>
+
+                <div>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <!-- Bouton droit -->
+                <a class="carousel__button carousel__button--right">&#10095;</a>
+
+            </div>
+
 
             <!-- Quote generator / API des personnages -->
 
