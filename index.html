@@ -36,17 +36,17 @@
             <div class="carousel__container">
                 <!-- Bouton gauche -->
                 <a class="carousel__button" onclick="plusSlides(-1)">&#10094;</a>
-                
+
                 <!-- Container des images -->
                 <div class="carousel__main">
                     <div class="carousel__slides carousel__slide--fade">
-                        <img src="img/DBZ.jpeg" alt="Goku" />
-                    </div>
-                    <div class="carousel__slides carousel__slide--fade">
-                        <img src="img/DBZ.jpeg" alt="Vegeta" />
-                    </div>
-                    <div class="carousel__slides carousel__slide--fade">
                         <img src="img/DBZ.jpeg" alt="Gohan" />
+                    </div>
+                    <div class="carousel__slides carousel__slide--fade">
+                        <img src="img/DBZ__picollo.jpeg" alt="Picollo" />
+                    </div>
+                    <div class="carousel__slides carousel__slide--fade">
+                        <img src="img/DBZ__Goku.jpeg" alt="Goku" />
                     </div>
                     <div class="carousel__dots">
                         <span class="carousel__dot" onclick="currentSlide(1)"></span>
@@ -61,27 +61,35 @@
             </div>
 
 
-            <!-- Quote generator / API des personnages -->
+            <!-- API des personnages -->
 
-            <div class="quote__container">
-                <div class="quote__text">
-                    <p class="quote__p">
-                        
-
-            <!-- A propos -->
-            <div class="intro"> <!-- titre + paragraphe + 3 trucs -->
-                <div class="intro__titre">
-                    <h1 class="intro__h1">
-                        <div class="h1__left--yellow">Drag</div>
-                        <div class="h1__left--orange">o</div>
-                        <div class="h1__left--yellow">n</div>
-                        <div class="h1__right--red">Ball Z</div>
-                    </h1>
-                    <h2 class="intro__h2">Kakarot</h2>
+            <div class="API__container">
+                <p class="search__result"></p>
+                <div class="API__search">
+                    <input class="search__input" type="text" placeholder="Nom du personnage" />
+                    <button class="search__btn">Chercher un personnage</button>
                 </div>
-                <p></p>
-                <div></div>
-            </div>
+
+                <div class="background">
+                    <div class="API__img"></div>
+
+                    <button class="clear__btn">Effacer</button>
+                </div>
+
+                <!-- A propos -->
+                <div class="intro"> <!-- titre + paragraphe + 3 trucs -->
+                    <div class="intro__titre">
+                        <h1 class="intro__h1">
+                            <div class="h1__left--yellow">Drag</div>
+                            <div class="h1__left--orange">o</div>
+                            <div class="h1__left--yellow">n</div>
+                            <div class="h1__right--red">Ball Z</div>
+                        </h1>
+                        <h2 class="intro__h2">Kakarot</h2>
+                    </div>
+                    <p></p>
+                    <div></div>
+                </div>
         </main>
 
         <section>
