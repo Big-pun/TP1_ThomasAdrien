@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link class="flaticon" rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
 </head>
 
 <body>
@@ -64,16 +65,20 @@
             <!-- API des personnages -->
 
             <div class="API__container">
-                <p class="search__result"></p>
+                <div class="result__bio" id="result__bio"></div>
                 <div class="API__search">
-                    <input class="search__input" type="text" placeholder="Nom du personnage" />
-                    <button class="search__btn">Chercher un personnage</button>
+                    <input class="search__input" id="search__input" type="text" placeholder="Nom du personnage" />
+                    <button class="search__btn" id="search__btn">Chercher un personnage</button>
                 </div>
 
                 <div class="background">
-                    <div class="API__img"></div>
+                    <div class="result__container">
+                        <img class="result__img" id="result__img"></img>
+                        <div class="result__name" id="result__name"></div>
+                        <div class="result__abilities" id="result__abilities"></div>
+                    </div>
 
-                    <button class="clear__btn">Effacer</button>
+                    <button class="clear__btn" id="clear__btn">Effacer</button>
                 </div>
 
                 <!-- A propos -->
@@ -109,6 +114,7 @@
         </footer>
     </div>
     <script src="script.js"></script>
+    <script src="fetch.js"></script>
 </body>
 
 </html>

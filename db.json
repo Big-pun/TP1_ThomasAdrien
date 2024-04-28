@@ -15,7 +15,7 @@
         "Super Kamehameha",
         "Super Dragon Fist"
       ],
-      "img": "assets/goku.png"
+      "img": "../assets/goku.png"
     },
     {
       "id": "vegeta",
