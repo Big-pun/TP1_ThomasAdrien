@@ -35,32 +35,38 @@
             <!-- Container principal du carousel -->
             <div class="carousel__container">
                 <!-- Bouton gauche -->
-                <a class="carousel__button carousel__button--left">&#10094;</a>
-
+                <a class="carousel__button" onclick="plusSlides(-1)">&#10094;</a>
+                
                 <!-- Container des images -->
-                <div class="carousel__slides fade">
-                    <img src="img/DBZ.jpeg" alt="Goku" width="90%" />
-                </div>
-                <div class="carousel__slides fade">
-                    <img src="img/DBZ.jpeg" alt="Vegeta" width="90%" />
-                </div>
-                <div class="carousel__slides fade">
-                    <img src="img/DBZ.jpeg" alt="Gohan" width="90%" />
-                </div>
-
-                <div>
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
+                <div class="carousel__main">
+                    <div class="carousel__slides carousel__slide--fade">
+                        <img src="img/DBZ.jpeg" alt="Goku" />
+                    </div>
+                    <div class="carousel__slides carousel__slide--fade">
+                        <img src="img/DBZ.jpeg" alt="Vegeta" />
+                    </div>
+                    <div class="carousel__slides carousel__slide--fade">
+                        <img src="img/DBZ.jpeg" alt="Gohan" />
+                    </div>
+                    <div class="carousel__dots">
+                        <span class="carousel__dot" onclick="currentSlide(1)"></span>
+                        <span class="carousel__dot" onclick="currentSlide(2)"></span>
+                        <span class="carousel__dot" onclick="currentSlide(3)"></span>
+                    </div>
                 </div>
 
                 <!-- Bouton droit -->
-                <a class="carousel__button carousel__button--right">&#10095;</a>
+                <a class="carousel__button" onclick="plusSlides(1)">&#10095;</a>
 
             </div>
 
 
             <!-- Quote generator / API des personnages -->
+
+            <div class="quote__container">
+                <div class="quote__text">
+                    <p class="quote__p">
+                        
 
             <!-- A propos -->
             <div class="intro"> <!-- titre + paragraphe + 3 trucs -->
