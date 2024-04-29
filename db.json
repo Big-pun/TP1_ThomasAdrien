@@ -339,6 +339,150 @@
         "God Slicer"
       ],
       "img": "assets/gokublack.png"
+    },
+    {
+      "id": "yamcha",
+      "name": "Yamcha",
+      "race": "Human",
+      "gender": "Male",
+      "bio": "A skilled martial artist and former desert bandit. Yamcha is a member of the Z Fighters, known for his Wolf Fang Fist technique and his love for Bulma.",
+      "health": "100,000",
+      "attack": "15,000",
+      "defense": "12,000",
+      "kiRestoreSpeed": "7,000",
+      "abilities": [
+        "Wolf Fang Fist",
+        "Spirit Ball",
+        "Desert Survival Skills"
+      ],
+      "img": "assets/yamcha.png"
+    },{
+      "id": "tienshinhan",
+      "name": "Tien Shinhan",
+      "race": "Human (Third Eye Clan)",
+      "gender": "Male",
+      "bio": "A disciplined and powerful Earthling martial artist with a third eye. Tien is a rival-turned-ally of Goku and fights alongside the Z Fighters. He's known for his Crane School techniques and his multi-form ability.",
+      "health": "130,000",
+      "attack": "18,000",
+      "defense": "16,000",
+      "kiRestoreSpeed": "8,000",
+      "abilities": [
+        "Dodon Ray",
+        "Solar Flare",
+        "Tri-Beam",
+        "Multi-Form"
+      ],
+      "img": "assets/tienshinhan.png"
+    },{
+      "id": "chiaotzu",
+      "name": "Chiaotzu",
+      "race": "Human",
+      "gender": "Male",
+      "bio": "Tien Shinhan's best friend and a telepathic martial artist. Chiaotzu fights alongside the Z Fighters and often assists Tien with his techniques.",
+      "health": "80,000",
+      "attack": "10,000",
+      "defense": "7,000",
+      "kiRestoreSpeed": "12,000",
+      "abilities": [
+        "Telekinesis",
+        "Dodon Ray"
+      ],
+      "img": "assets/chiaotzu.png"
+    },{
+      "id": "master_roshi",
+      "name": "Master Roshi",
+      "race": "Human",
+      "gender": "Male",
+      "bio": "A perverted yet wise martial arts master, also known as the Turtle Hermit. Master Roshi trained Goku and Krillin, and is one of the strongest Earthling fighters. He's known for the Kamehameha technique and his Mafuba sealing technique.",
+      "health": "90,000",
+      "attack": "14,000",
+      "defense": "10,000",
+      "kiRestoreSpeed": "9,000",
+      "abilities": [
+        "Kamehameha",
+        "Mafuba",
+        "Full-Power Kamehameha"
+      ],
+      "img": "assets/master_roshi.png"
+    },{
+      "id": "king_kai",
+      "name": "King Kai",
+      "race": "North Kai",
+      "gender": "Male",
+      "bio": "The ruler of Other World, a goofy-looking alien who trains deceased warriors. King Kai is responsible for significantly increasing Goku's power.",
+      "health": "100,000",
+      "attack": "12,000",
+      "defense": "11,000",
+      "kiRestoreSpeed": "15,000",
+      "abilities": [
+        "Advanced Gravity Training",
+        "Spirit Control"
+      ],
+      "img": "assets/king_kai.png"
+    },{
+      "id": "supreme_kai",
+      "name": "Supreme Kai",
+      "race": "Kai",
+      "gender": "Male",
+      "bio": "The God of Creation of Universe 7. Supreme Kai is a wise but arrogant deity who guides and oversees the Kai of his universe. He plays a crucial role in the fight against powerful villains.",
+      "health": "150,000",
+      "attack": "18,000",
+      "defense": "16,000",
+      "kiRestoreSpeed": "14,000",
+      "abilities": [
+        "Ki Manipulation",
+        "Teleportation",
+        "Healing"
+      ],
+      "img": "assets/supreme_kai.png"
+    },{
+      "id": "dende",
+      "name": "Dende",
+      "race": "Namekian",
+      "gender": "Male",
+      "bio": "A young Namekian who becomes the new Guardian of Earth after Kami's death. Dende plays a vital role in reviving fallen heroes and healing injuries.",
+      "health": "80,000",
+      "attack": "8,000",
+      "defense": "10,000",
+      "kiRestoreSpeed": "20,000",
+      "abilities": [
+        "Healing",
+        "Telepathy",
+        "Dragon Ball Creation"
+      ],
+      "img": "assets/dende.png"
+    },{
+      "id": "mr_popo",
+      "name": "Mr. Popo",
+      "race": "Unkown",
+      "gender": "Male",
+      "bio": "Dende's stoic and powerful assistant. Mr. Popo possesses incredible strength and telekinesis, but is known for his strict adherence to orders.",
+      "health": "120,000",
+      "attack": "16,000",
+      "defense": "18,000",
+      "kiRestoreSpeed": "10,000",
+      "abilities": [
+        "Superhuman Strength",
+        "Telekinesis",
+        "Flight"
+      ],
+      "img": "assets/mr_popo.png"
+    },{
+      "id": "shenron",
+      "name": "Shenron",
+      "race": "Eternal Dragon",
+      "gender": "N/A",
+      "bio": "Shenron is the magical dragon summoned by collecting the seven Dragon Balls on Earth. He grants one wish to whoever awakens him, but with limitations and potential consequences.",
+      "health": "N/A",
+      "attack": "N/A",
+      "defense": "N/A",
+      "kiRestoreSpeed": "N/A",
+      "abilities": [
+        "Wish Granting (with limitations)",
+        "Immense Power",
+        "Immortality"
+      ],
+      "img": "assets/shenron.png"
     }
   ]
 }
