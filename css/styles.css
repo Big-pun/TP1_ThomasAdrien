@@ -315,8 +315,40 @@ body {
 }
 
 .intro__p {
+  max-width: 65ch;
   font-family: "ProbaPro";
   font-size: 2vw;
   margin: 0 auto;
   margin-top: 1rem;
+}
+
+/* Trucs */
+
+.trucs__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 2rem;
+}
+
+.truc{
+  width: 33%;
+}
+
+.truc__img{
+width: 100%;
+}
+
+.truc__h3{
+  font-family: "Felina";
+  font-size: 2vw;
+  text-align: center;
+}
+
+.truc__p{
+  font-family: "ProbaPro";
+  font-size: 1vw;
+  text-align: center;
+  max-width: 65ch;
 }
