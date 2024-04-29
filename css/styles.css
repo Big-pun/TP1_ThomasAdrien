@@ -326,7 +326,7 @@ body {
 
 .trucs__container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: flex-start;
   margin: 2rem;
@@ -338,7 +338,7 @@ body {
 }
 
 .truc__img{
-width: 100%;
+  width: 100%;
 }
 
 .truc__h3{
@@ -352,4 +352,43 @@ width: 100%;
   font-size: 1vw;
   text-align: center;
   max-width: 65ch;
+}
+
+/* Statistiques */
+
+.stats__container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+  border-bottom: 3px solid #0606a5;
+}
+
+.stats__img{
+  width: 50%;
+}
+
+.stats__carte{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+
+
+.stats__chiffres{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.stats__chiffre{
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 50%;
+
+}
+
+.stats__h4 {
+  text-align: left;
 }
