@@ -357,23 +357,6 @@
       ],
       "img": "assets/yamcha.png"
     },{
-      "id": "tienshinhan",
-      "name": "Tien Shinhan",
-      "race": "Human (Third Eye Clan)",
-      "gender": "Male",
-      "bio": "A disciplined and powerful Earthling martial artist with a third eye. Tien is a rival-turned-ally of Goku and fights alongside the Z Fighters. He's known for his Crane School techniques and his multi-form ability.",
-      "health": "130,000",
-      "attack": "18,000",
-      "defense": "16,000",
-      "kiRestoreSpeed": "8,000",
-      "abilities": [
-        "Dodon Ray",
-        "Solar Flare",
-        "Tri-Beam",
-        "Multi-Form"
-      ],
-      "img": "assets/tienshinhan.png"
-    },{
       "id": "chiaotzu",
       "name": "Chiaotzu",
       "race": "Human",

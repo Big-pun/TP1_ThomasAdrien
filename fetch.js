@@ -85,7 +85,7 @@ const fetchData = async (searchName) => {
         function startSearch(event) {
             console.log("startSearch");
 
-            const name = searchInput.value.toLowerCase();
+            const name = searchInput.value.toLowerCase().trim();
             if (name !== "") {
                 fetchData(name);
             } else {
