@@ -53,11 +53,18 @@ body {
   align-items: center;
 }
 
-.main-nav__logo--svg {
+.main-nav__logo {
   max-width: 10rem;
   width: 100%;
   margin: 1rem 0;
 }
+
+.main-nav__logo--hover:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
 
 .main-nav__list {
   display: flex;
@@ -79,6 +86,11 @@ body {
   border-radius: 1rem;
   box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56),
     -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav__item--hover:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 /* Carousel */
@@ -160,6 +172,100 @@ body {
 }
 
 /* Section personnages */
+.result__bio{
+  max-width: 65ch;
+  font-size: 1.5vw;
+  font-family: "ProbaPro";
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+
+.API__search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.search__input{
+  font-size: 1.5vw;
+  padding: 0.5rem;
+  border: 1px solid #0606a5;
+  border-radius: 1rem;
+  margin: 0 2rem;
+  font-family: "ProbaPro";
+  text-align: center;
+}
+
+.search__btn{
+  font-size: 4vw;
+  font-family: "FighterZ";
+  padding: 0rem 1rem;
+  border: 1px solid #0606a5;
+  border-radius: 1rem;
+  box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56),
+  -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
+  background-color: #f94200;
+  color: #0606a5;
+  margin: 0 2rem;
+}
+
+.search__btn--hover:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.result__background{
+  background-color: #717171;
+}
+
+.result__card{
+  max-width: fit-content;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 1vw;
+  background-color: #0606a5;
+  margin: 0 auto;
+  border: 1vw solid #f2f5f2;
+  border-radius: 3rem;
+
+}
+
+.result__img{
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  max-width: 15vw;
+}
+.result__texte{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+}
+
+.result__texte{
+  font-family: "ProbaPro";
+  color: #f2f5f2;
+}
+
+.result__name{
+  font-size: 2vw;
+}
+
+.result__abilities{
+  font-size: 1.5vw;
+
+}
+
+.clear__btn{
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
 
 /* Introduction */
 
@@ -168,6 +274,12 @@ body {
   display: flex;
   flex-flow: column wrap;
   max-width: 100%;
+  margin: 2rem;
+}
+
+.intro__titre {
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .intro__h1 {
@@ -178,6 +290,7 @@ body {
   justify-content: center;
   font-size: 7vw;
   -webkit-text-stroke: black 1px;
+  margin: 0 auto;
 }
 
 .h1__left--yellow {
@@ -199,4 +312,11 @@ body {
   font-family: "Felina";
   font-size: 5vw;
   margin: 0 auto;
+}
+
+.intro__p {
+  font-family: "ProbaPro";
+  font-size: 2vw;
+  margin: 0 auto;
+  margin-top: 1rem;
 }

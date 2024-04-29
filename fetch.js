@@ -22,6 +22,9 @@ const fetchData = async (searchName) => {
 };
 
 
+
+
+
     // TODO API affichage des erreurs
 
     function displayErrorPopup(message) {
@@ -51,7 +54,7 @@ const fetchData = async (searchName) => {
         resultImageElement.alt = characterName;
 
         const resultAbilities = document.getElementById("result__abilities");
-        resultAbilities.innerText = "Spéciale techniques: " + abilities; 
+        resultAbilities.innerText = "Spéciales techniques: " + abilities; 
         }
         
 
@@ -103,3 +106,9 @@ const fetchData = async (searchName) => {
         // TODO appel de la fonction clearDefinition lors du click sur clearButton
 
         clearButton.addEventListener("click", clearData);
+
+
+        // TODO au chargement de la page, afficher les données de base pour "goku"
+        window.addEventListener("load", () => {
+            fetchData("goku");
+        });
