@@ -483,6 +483,22 @@
         "Immortality"
       ],
       "img": "assets/shenron.png"
+    },{
+      "id": "bulma",
+      "name": "Bulma",
+      "race": "Human",
+      "gender": "Female",
+      "bio": "A brilliant scientist and inventor who is the founder and CEO of Capsule Corp. Bulma is a long-time friend and ally of Goku and the Z Fighters, often providing them with technological support and gadgets.",
+      "health": "120,000",
+      "attack": "10,000",
+      "defense": "8,000",
+      "kiRestoreSpeed": "8,000",
+      "abilities": [
+        "Intelligence",
+        "Inventing",
+        "Piloting Capsule Corp. vehicles"
+      ],
+      "img": "assets/bulma.png"
     }
   ]
 }
