@@ -51,7 +51,7 @@ const fetchData = async (searchName) => {
         resultImageElement.alt = characterName;
 
         const resultAbilities = document.getElementById("result__abilities");
-        resultAbilities.innerText = abilities
+        resultAbilities.innerText = "Spéciale techniques: " + abilities; 
         }
         
 

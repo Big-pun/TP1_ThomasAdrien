@@ -69,7 +69,7 @@ body {
 
 .main-nav__item {
   max-width: 100%;
-  font-size: 4rem;
+  font-size: 4vw;
   margin: 0 1rem;
   padding: 0 1rem;
   text-decoration: none;
@@ -113,7 +113,7 @@ body {
   cursor: pointer;
   margin: 0 2rem;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   transition: background-color 0.6s ease;
 }
 
@@ -159,7 +159,7 @@ body {
   }
 }
 
-/* Quote generator */
+/* Section personnages */
 
 /* Introduction */
 
@@ -173,10 +173,10 @@ body {
 .intro__h1 {
   max-width: 100%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row nowrap !important;
   align-items: center;
   justify-content: center;
-  font-size: 5rem;
+  font-size: 7vw;
   -webkit-text-stroke: black 1px;
 }
 
@@ -197,6 +197,6 @@ body {
 
 .intro__h2 {
   font-family: "Felina";
-  font-size: 3em;
+  font-size: 5vw;
   margin: 0 auto;
 }
