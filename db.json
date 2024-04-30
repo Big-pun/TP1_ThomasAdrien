@@ -482,6 +482,22 @@
         "Piloting Capsule Corp. vehicles"
       ],
       "img": "assets/bulma.png"
+    },{
+      "id": "chi_chi",
+      "name": "Chichi",
+      "race": "Human",
+      "gender": "Female",
+      "bio": "Goku's wife and a strong martial artist in her own right. Chi-Chi cares deeply for her family and encourages Gohan to focus on his studies, though she understands his Saiyan heritage.",
+      "health": "N/A",
+      "attack": "N/A",
+      "defense": "N/A",
+      "kiRestoreSpeed": "N/A",
+      "abilities": [
+        "Expert Martial Artist",
+        "Strong Willpower",
+        "Skilled Markswoman"
+      ],
+      "img": "assets/chichi.png"
     }
   ]
 }
