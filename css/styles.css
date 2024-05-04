@@ -89,8 +89,7 @@ body {
   background-color:#ff6700;
   color: #0606a5;
   border-radius: 1rem;
-  box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56),
-    -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .main-nav__item--hover:hover {
@@ -109,7 +108,7 @@ body {
   flex-flow: row nowrap;
   margin: 0 auto;
   padding: 3rem;
-  border-bottom: 3px solid #0606a5;
+  
 }
 
 .carousel__slides {
@@ -119,6 +118,7 @@ body {
 .carousel__slides img {
   width: 100%;
   height: auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .carousel__button {
@@ -153,6 +153,7 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease;
   margin: 0 0.5rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   
 }
 
@@ -177,9 +178,14 @@ body {
 }
 
 /* Section personnages */
+.API__container{
+  border-top: 3px solid #0606a5;
+  margin: 2rem;
+}
+
 .result__bio{
   max-width: 65ch;
-  font-size: 1.5vw;
+  font-size: 2vw;
   font-family: "ProbaPro";
   margin: 0 auto;
   margin-top: 2rem;
@@ -201,6 +207,7 @@ body {
   margin: 0 2rem;
   font-family: "ProbaPro";
   text-align: center;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .search__btn{
@@ -209,8 +216,7 @@ body {
   padding: 0rem 1rem;
   border: 1px solid #0606a5;
   border-radius: 1rem;
-  box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56),
-  -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   background-color: #ff6700;
   color: #0606a5;
   margin: 0 2rem;
@@ -236,7 +242,7 @@ body {
   margin: 0 auto;
   border: 1vw solid #f2f5f2;
   border-radius: 3rem;
-
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .result__img{
@@ -258,11 +264,11 @@ body {
 }
 
 .result__name{
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 .result__abilities{
-  font-size: 1.5vw;
+  font-size: 2vw;
 
 }
 
@@ -282,6 +288,8 @@ body {
   flex-flow: column wrap;
   max-width: 100%;
   margin: 2rem;
+  border-bottom: 3px solid #0606a5;
+
 }
 
 .intro__titre {
@@ -297,6 +305,7 @@ body {
   justify-content: center;
   font-size: 7vw;
   -webkit-text-stroke: black 1px;
+  text-shadow: 0.5vw 0.5vw 0.5vw black;
   margin: 0 auto;
 }
 
@@ -337,7 +346,7 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   margin: 2rem;
-  border-bottom: 3px solid #0606a5;
+  
 }
 
 .truc{
@@ -373,7 +382,7 @@ body {
 }
 
 .stats__img{
-  width: 50%;
+  max-width: 50%;
 }
 
 .stats__carte{
@@ -421,10 +430,12 @@ margin-top: 0;
   background-color:#ff6700;
   color: #0606a5;
   border-radius: 0.5rem;
-  box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56),
-    -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
+.background__cartes{
+  background-color: #ff6700;
+}
 .membres__wrapper{
   display: flex;
   flex-flow: row wrap;
@@ -443,12 +454,17 @@ margin-top: 0;
 }
 
 .equipe__text{
+  background-color: #f2f5f2;
+  margin-top: 2rem;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 3rem;
   max-width: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .equipe__h2{
@@ -471,18 +487,21 @@ margin-top: 0;
   padding: 1rem;
   border-radius: 1rem;
   padding-bottom: 0rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .membre{
   position: relative;
   top: -3rem;
   border-radius: 1rem;
-}
+  }
 
 .membre img{
   max-width: 100%;
   border-radius: 1rem;
   background-color: #db9578 ;
+  box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56),
+    -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .membre__h3{
