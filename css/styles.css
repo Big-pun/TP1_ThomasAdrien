@@ -435,6 +435,8 @@ margin-top: 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
+/* cartes */
+
 .background__cartes{
   background-color: #ff6700;
 }
@@ -525,4 +527,48 @@ margin-top: 0;
   font-size: 1.5vw;
   text-align: center;
   max-width: 65ch;
+}
+
+/* map & form */
+
+iframe{
+  border-radius: 1rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.form__container{
+  position: relative;
+  z-index: 1;
+}
+
+.form__wrapper{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.form__group--nom{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0.5rem;
+}
+
+.form__group{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0.5rem;
+}
+
+.form__group--ndf,
+.form__group--prenom{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
 }
