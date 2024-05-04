@@ -409,6 +409,7 @@ body {
 .stats__p{ 
 font-family: "ProbaPro";
 text-align: left;
+margin-top: 0;
 }
 
 .stats__btn{
@@ -438,9 +439,29 @@ text-align: left;
   align-items: center;
   justify-content: space-around;
   margin: 2rem;
-  background-color: #ff6700;
   margin-bottom: 2rem;
-  
+}
+
+.equipe__text{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  max-width: 100%;
+}
+
+.equipe__h2{
+  font-family: "Felina";
+  font-size: 3vw;
+  text-align: center;
+}
+
+.equipe__p{
+  font-family: "ProbaPro";
+  font-size: 1.5vw;
+  text-align: center;
+  max-width: 65ch;
 }
 
 .equipe__carte{
@@ -449,12 +470,38 @@ text-align: left;
   background-color: #f2f5f2;
   padding: 1rem;
   border-radius: 1rem;
-  padding-top: 3rem
+  padding-bottom: 0rem;
 }
 
 .membre{
-  background-color: #db9578 ;
   position: relative;
   top: -3rem;
   border-radius: 1rem;
+}
+
+.membre img{
+  max-width: 100%;
+  border-radius: 1rem;
+  background-color: #db9578 ;
+}
+
+.membre__h3{
+  font-family: "Felina";
+  font-size: 2vw;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.membre__h4{
+  font-family: "Felina";
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.membre__p{
+  font-family: "ProbaPro";
+  font-size: 1.5vw;
+  text-align: center;
+  max-width: 65ch;
 }
