@@ -17,14 +17,25 @@
         <div class="header__background">
             <div class="container">
                 <nav class="main-nav">
-                    <a href="index.html"><img class="main-nav__logo main-nav__logo--hover" src="img/dragonball.svg"
-                            alt="The 4 Stars DragonBall">
-                    </a>
+                    <div class="logo-texte-wrapper">
+                        <a href="index.html"><img class="main-nav__logo main-nav__logo--hover" src="img/dragonball.svg"
+                                alt="The 4 Stars DragonBall">
+                            </a>
+
+                            <h1 class="logo-texte">
+                                <div class="h1-texte h1__left--yellow">Drag</div>
+                                <div class="h1-texte h1__left--orange">o</div>
+                                <div class="h1-texte h1__left--yellow">n</div>
+                                <div class="h1-texte h1__right--red">Ball Z</div>
+                            </h1>
+                        
+                    </div>
+                    
                     <div class="main-nav__list">
-                        <a class="main-nav__item main-nav__item--hover" href="#">Accueil</a>
-                        <a class="main-nav__item main-nav__item--hover" href="#">A propos</a>
-                        <a class="main-nav__item main-nav__item--hover" href="#">Galerie</a>
-                        <a class="main-nav__item main-nav__item--hover" href="#">Equipe</a>
+                        <a class="main-nav__item main-nav__item--hover" href="#personnages">Personnages</a>
+                        <a class="main-nav__item main-nav__item--hover" href="#a-propos">A propos</a>
+                        <a class="main-nav__item main-nav__item--hover" href="#galerie">Galerie</a>
+                        <a class="main-nav__item main-nav__item--hover" href="#equipe">Equipe</a>
                     </div>
                 </nav>
             </div>
@@ -65,7 +76,7 @@
 
     <!-- API des personnages -->
     <div class="container">
-        <div class="API__container">
+        <div class="API__container" id="personnages">
             <div class="result__bio" id="result__bio"></div>
             <div class="API__search">
                 <div class="search">
@@ -94,7 +105,7 @@
 
     <!-- A propos -->
     <div class="container">
-        <div class="intro"> <!-- titre + paragraphe + 3 trucs -->
+        <div class="intro" id="a-propos"> <!-- titre + paragraphe + 3 trucs -->
             <div class="intro__titre">
                 <h1 class="intro__h1">
                     <div class="h1-texte h1__left--yellow">Drag</div>
@@ -116,23 +127,21 @@
 
             <div class="trucs__container">
                 <div class="truc">
-                    <img class="truc__img" src="" alt="" />
+                    <img class="truc__img" src="/img/dragonball.svg" alt="Une des 7 dragonball" />
                     <h3 class="truc__h3">93% d'avis positifs</h3>
                     <p class="truc__p">Quand Dragon Ball Z : Kakarot est à son meilleur, c’est incroyable. Les grands
-                        moments de chaque saga prennent vie de manière impeccable avec de superbes visuels et effets –
-                        Kakarot montre également son amour pour les moments plus petits et plus axés sur les personnages
-                        qui
-                        ont fait tomber les fans amoureux de l'animé en premier lieu.</p>
+                        moments de chaque saga prennent vie de manière impeccable avec de superbes visuels et effets.
+                    </p>
                 </div>
                 <div class="truc">
-                    <img class="truc__img" src="" alt="" />
+                    <img class="truc__img" src="/img/dragonball.svg" alt="Une des 7 dragonball" />
                     <h3 class="truc__h3">Contenu additionnel</h3>
                     <p class="truc__p">Avec pas moins de 6 contenu additionnels téléchargeables disponibles a ce jour,
                         les
                         joueurs désirant pousser l'aventure de Dragon Ball Z : Kakarot seront servis. </p>
                 </div>
                 <div class="truc">
-                    <img class="truc__img" src="" alt="" />
+                    <img class="truc__img" src="img/dragonball.svg" alt="Une des 7 dragonball" />
                     <h3 class="truc__h3">55 heures de jeu</h3>
                     <p class="truc__p">En se concentrant sur les objectifs principaux, Dragon Ball Z : Kakarot dure
                         environ
@@ -146,7 +155,7 @@
     </main>
 
     <section>
-        <div class="container">
+        <div class="container" id="galerie">
             <!-- Grid Galerie -->
             <div class="galerie--grid">
                 <div class="galerie__item" id="item-0"><img src="img/grid4.jpeg" alt=""></div>
@@ -186,7 +195,7 @@
         </div>
 
         <!-- Cartes -->
-        <div class="background__cartes">
+        <div class="background__cartes" id="equipe">
             <div class="container">
                 <div class="equipe">
                     <div class="equipe__text">
@@ -260,20 +269,23 @@
                             <div class="form__group--nom">
                                 <div class="form__group">
                                     <label for="name" class="form__label">Nom de famille</label>
-                                    <input type="text" id="name" class="form__input" placeholder="Entrez votre nom"/>
+                                    <input type="text" id="name" class="form__input" placeholder="Entrez votre nom" />
                                 </div>
                                 <div class="form__group">
                                     <label for="first-name" class="form__label">Prénom</label>
-                                    <input type="text" id="first-name" class="form__input" placeholder="Entrez votre prénom"/>
+                                    <input type="text" id="first-name" class="form__input"
+                                        placeholder="Entrez votre prénom" />
                                 </div>
                             </div>
                             <div class="form__group">
                                 <label for="email" class="form__label">Email</label>
-                                <input type="email" id="email" class="form__input" placeholder="Entrez votre courriel"/>
+                                <input type="email" id="email" class="form__input"
+                                    placeholder="Entrez votre courriel" />
                             </div>
                             <div class="form__group">
                                 <label for="message" class="form__label">Message</label>
-                                <textarea id="message" class="form__input" placeholder="Entrez votre message"></textarea>
+                                <textarea id="message" class="form__input"
+                                    placeholder="Entrez votre message"></textarea>
                             </div>
                         </div>
                         <button type="submit" class="form__button">Envoyer</button>
