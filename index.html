@@ -62,83 +62,79 @@
 
     <!-- API des personnages -->
     <div class="container">
-        <div class="API__container" id="personnages">
-            <div class="result__bio" id="result__bio"></div>
-            <div class="API__search">
-                <div class="search">
-                    <label class="search__input__label" for="search__input">Entrez un nom pour trouver les infos du
-                        personnage</label>
-                    <input class="search__input" id="search__input" type="text" placeholder="Nom du personnage" />
-                </div>
-                <button class="search__btn search__btn--hover" id="search__btn">Chercher un personnage</button>
-            </div>
+      <div class="api-container personnages">
+        <div class="result-bio"></div>
+        <div class="api-search">
+          <div class="search">
+            <label class="search__input-label" for="search-input">Entrez un nom pour trouver les infos du personnage</label>
+            <input class="search__input" id="search-input" type="text" placeholder="Nom du personnage" />
+          </div>
+          <button class="search__btn search__btn--hover" id="search-btn">Chercher un personnage</button>
         </div>
+      </div>
     </div>
-
-    <div class="result__background">
-        <div class="container">
-            <div class="result__card">
-                <img class="result__img" id="result__img"></img>
-                <div class="result__texte">
-                    <div class="result__name" id="result__name"></div>
-                    <div class="result__abilities" id="result__abilities"></div>
-                </div>
-                <button class="clear__btn clear__btn--hover" id="clear__btn">Effacer</button>
-            </div>
+    
+    <div class="result-background">
+      <div class="container">
+        <div class="result-card">
+          <img class="result-img" id="result-img" />
+          <div class="result-texte">
+            <div class="result-name" id="result-name"></div>
+            <div class="result-abilities" id="result-abilities"></div>
+          </div>
+          <button class="clear-btn clear-btn--hover" id="clear-btn">Effacer</button>
         </div>
-
+      </div>
     </div>
 
     <!-- A propos -->
-    <div class="container">
-        <div class="intro" id="a-propos"> <!-- titre + paragraphe + 3 trucs -->
-            <div class="intro__titre">
-                <h1 class="intro__h1">
-                    <div class="h1-texte h1__left--yellow">Drag</div>
-                    <div class="h1-texte h1__left--orange">o</div>
-                    <div class="h1-texte h1__left--yellow">n</div>
-                    <div class="h1-texte h1__right--red">Ball Z</div>
-                </h1>
-                <h2 class="intro__h2">Kakarot</h2>
+<div class="container">
+    <div class="intro intro--a-propos">
+        <div class="intro__titre">
+            <h1 class="intro__h1">
+                <div class="h1-texte h1__left--yellow">Drag</div>
+                <div class="h1-texte h1__left--orange">o</div>
+                <div class="h1-texte h1__left--yellow">n</div>
+                <div class="h1-texte h1__right--red">Ball Z</div>
+            </h1>
+            <h2 class="intro__h2">Kakarot</h2>
+        </div>
+        <p class="intro__p">Dragon Ball Z: Kakarot est un action-RPG. Les fonctionnalités in-game sont nombreuses.
+            Le
+            jeu a un gameplay de RPG classique : combats entre les différents personnages, entraînement, découverte
+            des
+            zones, pêche pour la récupération d’énergie, quêtes secondaires. Il y a aussi des mini-jeux comme du
+            baseball ou du karting. Il y a aussi le mode de jeu « Dragon Ball Card Warriors », un jeu de cartes de
+            stratégie en ligne, avec plusieurs modes de combats (avec ou sans rangs de niveau, ou tournois mensuels
+            en
+            équipe).</p>
+
+        <div class="trucs__container">
+            <div class="truc">
+                <img class="truc__img" src="/img/dragonball.svg" alt="Une des 7 dragonball" />
+                <h3 class="truc__h3">93% d'avis positifs</h3>
+                <p class="truc__p">Quand Dragon Ball Z : Kakarot est à son meilleur, c’est incroyable. Les grands
+                    moments de chaque saga prennent vie de manière impeccable avec de superbes visuels et effets.
+                </p>
             </div>
-            <p class="intro__p">Dragon Ball Z: Kakarot est un action-RPG. Les fonctionnalités in-game sont nombreuses.
-                Le
-                jeu a un gameplay de RPG classique : combats entre les différents personnages, entraînement, découverte
-                des
-                zones, pêche pour la récupération d’énergie, quêtes secondaires. Il y a aussi des mini-jeux comme du
-                baseball ou du karting. Il y a aussi le mode de jeu « Dragon Ball Card Warriors », un jeu de cartes de
-                stratégie en ligne, avec plusieurs modes de combats (avec ou sans rangs de niveau, ou tournois mensuels
-                en
-                équipe).</p>
-
-            <div class="trucs__container">
-                <div class="truc">
-                    <img class="truc__img" src="/img/dragonball.svg" alt="Une des 7 dragonball" />
-                    <h3 class="truc__h3">93% d'avis positifs</h3>
-                    <p class="truc__p">Quand Dragon Ball Z : Kakarot est à son meilleur, c’est incroyable. Les grands
-                        moments de chaque saga prennent vie de manière impeccable avec de superbes visuels et effets.
-                    </p>
-                </div>
-                <div class="truc">
-                    <img class="truc__img" src="/img/dragonball.svg" alt="Une des 7 dragonball" />
-                    <h3 class="truc__h3">Contenu additionnel</h3>
-                    <p class="truc__p">Avec pas moins de 6 contenu additionnels téléchargeables disponibles a ce jour,
-                        les
-                        joueurs désirant pousser l'aventure de Dragon Ball Z : Kakarot seront servis. </p>
-                </div>
-                <div class="truc">
-                    <img class="truc__img" src="img/dragonball.svg" alt="Une des 7 dragonball" />
-                    <h3 class="truc__h3">55 heures de jeu</h3>
-                    <p class="truc__p">En se concentrant sur les objectifs principaux, Dragon Ball Z : Kakarot dure
-                        environ
-                        30 heures et demie. Si vous êtes un joueur qui s'efforce de voir tous les aspects du jeu, vous
-                        passerez probablement environ 55 heures pour le terminer à 100 %.</p>
-                </div>
-
+            <div class="truc">
+                <img class="truc__img" src="/img/dragonball.svg" alt="Une des 7 dragonball" />
+                <h3 class="truc__h3">Contenu additionnel</h3>
+                <p class="truc__p">Avec pas moins de 6 contenu additionnels téléchargeables disponibles a ce jour,
+                    les
+                    joueurs désirant pousser l'aventure de Dragon Ball Z : Kakarot seront servis. </p>
+            </div>
+            <div class="truc">
+                <img class="truc__img" src="img/dragonball.svg" alt="Une des 7 dragonball" />
+                <h3 class="truc__h3">55 heures de jeu</h3>
+                <p class="truc__p">En se concentrant sur les objectifs principaux, Dragon Ball Z : Kakarot dure
+                    environ
+                    30 heures et demie. Si vous êtes un joueur qui s'efforce de voir tous les aspects du jeu, vous
+                    passerez probablement environ 55 heures pour le terminer à 100 %.</p>
             </div>
         </div>
     </div>
-    </main>
+</div>
 
     <section>
         <div class="container" id="galerie">

@@ -80,84 +80,235 @@ $header-background-color: #f2f2f2
 
 /* Carousel */
 
-.carousel {
-  &__container {
-    max-width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row nowrap;
-    margin: 0 auto;
-    padding: 2rem 0rem;
-  }
+.carousel
+&__container
+    max-width: 100%
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-flow: row nowrap
+    margin: 0 auto
+    padding: 2rem 0rem
 
-  &__slides {
-    display: none;
+&__slides
+    display: none
 
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 1rem;
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    img
+        width: 100%
+        height: auto
+        border-radius: 1rem
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
         0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    }
-  }
 
-  &__button {
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 2rem;
-    padding: 1vw;
-    font-size: 1.5vw;
-    transition: background-color 0.6s ease;
+&__button
+    transform: translateY(-50%)
+    background-color: rgba(0, 0, 0, 0.5)
+    color: white
+    border: none
+    border-radius: 50%
+    cursor: pointer
+    margin: 0 2rem
+    padding: 1vw
+    font-size: 1.5vw
+    transition: background-color 0.6s ease
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
       0 1px 5px 0 rgba(0, 0, 0, 0.12);
 
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-  }
+    &:hover
+        background-color: rgba(0, 0, 0, 0.8)
 
-  &__dots {
-    text-align: center;
-    margin: 1rem;
+&__dots
+    text-align: center
+    margin: 1rem
 
-    &__dot {
-      cursor: pointer;
-      height: 1rem;
-      width: 1rem;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-      margin: 0 0.5rem;
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    &__dot
+        cursor: pointer
+        height: 1rem
+        width: 1rem
+        background-color: #bbb
+        border-radius: 50%
+        display: inline-block
+        transition: background-color 0.6s ease
+        margin: 0 0.5rem
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
         0 1px 5px 0 rgba(0, 0, 0, 0.12);
 
-      &.active,
-      &:hover {
-        background-color: #717171;
-      }
-    }
-  }
+    &.active,
+    &:hover
+        background-color: #717171
 
-  &__slide--fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
+&__slide--fade
+    animation-name: fade
+    animation-duration: 1.5s
 
-  @keyframes fade {
+@keyframes fade
     from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-}
+    opacity: 0.4
 
+    to {
+    opacity: 1
+
+/* Personnages */
+.container
+    margin: 0 auto
+    max-width: 1200px
+
+.api-container
+    padding: 20px
+    background-color: #f2f2f2
+    border-radius: 5px
+
+&--personnages
+    background-color: #eaeaea
+
+.result-bio
+    margin-bottom: 20px
+
+.api-search
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.search
+    flex: 1
+    margin-right: 20px
+
+    &__input-label
+        font-weight: bold
+
+    &__input
+        padding: 5px
+        width: 100%
+        border: 1px solid #ccc
+        border-radius: 3px
+
+    &__btn
+        padding: 10px 20px
+        background-color: #007bff
+        color: #fff
+        border: none
+        border-radius: 3px
+
+    &--hover
+        background-color: #0056b3
+
+.result-background
+    background-color: #fff
+    padding: 20px
+    border-radius: 5px
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+
+.result-card
+    display: flex
+    align-items: center
+
+.result-img
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    margin-right: 20px
+
+.result-texte
+    flex: 1
+
+    .result-name
+        font-size: 1.5em
+        font-weight: bold
+
+    .result-abilities
+        margin-top: 10px
+        color: #888
+
+.clear-btn
+    padding: 10px 20px
+    background-color: #dc3545
+    color: #fff
+    border: none
+    border-radius: 3px
+
+    &--hover
+        background-color: #a71d2a
+
+/* Introduction */
+
+.intro
+    text-align: center
+    display: flex
+    flex-flow: column wrap
+    max-width: 100%
+    margin: 2rem
+    border-bottom: 3px solid #0606a5
+
+&--a-propos
+    @extend &
+
+&__titre
+    display: flex
+    flex-flow: column wrap
+
+&__h1
+    max-width: 100%
+    display: flex
+    flex-flow: row nowrap !important
+    align-items: center
+    justify-content: center
+    font-size: 7vw
+    -webkit-text-stroke: black 1px
+    text-shadow: 0.5vw 0.5vw 0.5vw black
+    margin: 0 auto
+
+    &-texte
+    &.h1__left--yellow
+        color: #f7d000
+        font-family: "Saiyan_sans-left"
+
+    &.h1__right--red
+        color: #ff0000
+        font-family: "Saiyan_sans-right"
+
+    &.h1__left--orange
+        color: #ff6700
+        font-family: "Saiyan_sans-left"
+
+&__h2
+    font-family: "Felina"
+    font-size: 5vw
+    margin: 0 auto
+
+&__p
+    max-width: 65ch
+    font-family: "ProbaPro"
+    font-size: 1.5vw
+    margin: 0 auto
+    margin-top: 1rem
+
+/* Trucs */
+
+.trucs__container
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-around
+    align-items: flex-start
+    margin: 2rem
+
+.truc
+    width: 33%
+    display: flex
+    flex-flow: column wrap
+    align-items: center
+
+    &__img
+        width: 25%
+
+    &__h3
+        font-family: "Felina"
+        font-size: 2vw
+        text-align: center
+        margin: 0 auto
+
+    &__p
+        font-family: "ProbaPro"
+        font-size: 1.5vw
+        text-align: center
+        max-width: 65ch
