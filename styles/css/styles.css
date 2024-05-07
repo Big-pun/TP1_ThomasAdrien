@@ -1,28 +1,28 @@
 @font-face {
   font-family: "Saiyan_sans-left";
-  src: url("../fonts/saiyan_sans/Saiyan-Sans%20Left%20Oblique.ttf")
+  src: url("/fonts/saiyan_sans/Saiyan-Sans%20Left%20Oblique.ttf")
     format("truetype");
 }
 
 @font-face {
   font-family: "Saiyan_sans-right";
-  src: url("../fonts/saiyan_sans/Saiyan-Sans%20Right%20Oblique.ttf")
+  src: url("/fonts/saiyan_sans/Saiyan-Sans%20Right%20Oblique.ttf")
     format("truetype");
 }
 
 @font-face {
   font-family: "FighterZ";
-  src: url("../fonts/DragonBallFighterz-Regular.ttf") format("truetype");
+  src: url("/fonts/DragonBallFighterz-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "ProbaPro";
-  src: url("../fonts/ProbaPro-Regular.otf") format("opentype");
+  src: url("/fonts/ProbaPro-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Felina";
-  src: url("../fonts/FelinaT26\ Gothic\ Regular.otf") format("opentype");
+  src: url("/fonts/FelinaT26\ Gothic\ Regular.otf") format("opentype");
 }
 
 /* Container */
@@ -45,40 +45,30 @@ body {
 
 /* CSS Navbar */
 .header__background {
-  background-image: url("../img/header__background.svg");
+  background-image: url("/img/header__background.svg");
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
 }
 
-.main-nav {
+.header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo-texte-wrapper{
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  flex-flow: column wrap;
-  margin: 2rem;
-  position : relative;
-}
-
-.main-nav__logo {
+.header__logo {
   max-width: 10vw;
-  width: 100%;
   
 }
 
-.main-nav__logo--hover:hover {
+.header-nav__logo--hover:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
-.main-nav__list {
+.header__list {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -86,7 +76,7 @@ body {
   max-width: 100%;
 }
 
-.main-nav__item {
+.header__item {
   max-width: 100%;
   font-size: 4vw;
   margin: 0 1rem;
@@ -100,7 +90,7 @@ body {
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
-.main-nav__item--hover:hover {
+.header-nav__item--hover:hover {
   cursor: pointer;
   transform: scale(1.1);
 }

@@ -5,30 +5,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TP1-Session2-Integration</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="/styles/css/styles.css" />
+    <link rel="stylesheet" href="/styles/css/normalize.css" />
     <link class="flaticon" rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
 </head>
 
 <body>
     <a href="#content" class="screen-reader-text">Aller au contenu principal</a>
-    <header>
+    <header class="header">
         <div class="header__background">
             <div class="container">
-                <nav class="main-nav">
-                    <div class="logo-texte-wrapper">
-                        <a href="index.html"><img class="main-nav__logo main-nav__logo--hover" src="img/dragonball.svg"
-                                alt="The 4 Stars DragonBall">
-                            </a>
-                        
-                    </div>
+                <nav class="header__nav">
+                    <a href="index.html"  header__logo--hover">
+                        <img class="header__logo" src="img/dragonball.svg" alt="The 4 Stars DragonBall">
+                    </a>
                     
-                    <div class="main-nav__list">
-                        <a class="main-nav__item main-nav__item--hover" href="#personnages">Personnages</a>
-                        <a class="main-nav__item main-nav__item--hover" href="#a-propos">A propos</a>
-                        <a class="main-nav__item main-nav__item--hover" href="#galerie">Galerie</a>
-                        <a class="main-nav__item main-nav__item--hover" href="#equipe">Equipe</a>
+                    <div class="header__list">
+                        <a href="#personnages" class="header__item header__item--hover">Personnages</a>
+                        <a href="#a-propos" class="header__item header__item--hover">A propos</a>
+                        <a href="#galerie" class="header__item header__item--hover">Galerie</a>
+                        <a href="#equipe" class="header__item header__item--hover">Equipe</a>
                     </div>
                 </nav>
             </div>
@@ -37,13 +34,9 @@
 
     <div class="container">
         <main id="content">
-            <!-- Carousel 3 images -->
-            <!-- Container principal du carousel -->
             <div class="carousel__container">
-                <!-- Bouton gauche -->
                 <a class="carousel__button" onclick="plusSlides(-1)">&#10094;</a>
-
-                <!-- Container des images -->
+                
                 <div class="carousel__main">
                     <div class="carousel__slides carousel__slide--fade">
                         <img src="img/DBZ.jpeg" alt="Gohan" />
@@ -54,17 +47,17 @@
                     <div class="carousel__slides carousel__slide--fade">
                         <img src="img/DBZ__Goku.jpeg" alt="Goku" />
                     </div>
+                    
                     <div class="carousel__dots">
                         <span class="carousel__dot" onclick="currentSlide(1)"></span>
                         <span class="carousel__dot" onclick="currentSlide(2)"></span>
                         <span class="carousel__dot" onclick="currentSlide(3)"></span>
                     </div>
                 </div>
-
-                <!-- Bouton droit -->
+                
                 <a class="carousel__button" onclick="plusSlides(1)">&#10095;</a>
-
             </div>
+        </main>
     </div>
 
     <!-- API des personnages -->

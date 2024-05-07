@@ -1,0 +1,163 @@
+$font-path: "/fonts/"
+
+$font-families: (
+  "Saiyan_sans-left": "Saiyan-Sans Left Oblique.ttf",
+  "Saiyan_sans-right": "Saiyan-Sans Right Oblique.ttf",
+  "FighterZ": "DragonBallFighterz-Regular.ttf",
+  "ProbaPro": "ProbaPro-Regular.otf",
+  "Felina": "FelinaT26 Gothic Regular.otf"
+);
+
+@each $font-name, $font-file in $font-families
+@font-face
+    font-family: #{$font-name}
+    src: url("#{$font-path}#{$font-file}") format("truetype");
+
+/* Container */
+$container-max-width: 1200px
+
+.container
+    max-width: $container-max-width
+    padding: 0 1rem
+    margin: 0 auto
+
+/* Body */
+body
+    background-color: #f2f5f2
+    background-image: url("data:image/svg+xml,%3Csvg width='38' height='38' viewBox='0 0 38 38' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='bevel-circle' fill='%23a2adc7' fill-opacity='0.14'%3E%3Cpath d='M10.414 29l-8 8h33.172l-8-8H10.414zM9 27.586l-8 8V2.414l8 8v17.172zM10.414 9l-8-8h33.172l-8 8H10.414zM29 10.414l8-8v33.172l-8-8V10.414zM11 11h16v16H11V11zm8 14c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM0 0h38v38H0V0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+
+/* Cacher le lien pour liseuse */
+.screen-reader-text
+    display: none
+
+$header-background-color: #f2f2f2
+
+.header
+    &__background
+        background-color: $header-background-color
+        background-image: url("/img/header__background.svg")
+        background-size: 100% auto
+        background-position: center
+        background-repeat: no-repeat
+        object-fit: cover
+
+    &__nav
+        display: flex
+        justify-content: space-between
+        align-items: center // Styles for the main navigation
+
+    &__logo
+        max-width: 10vw
+        width: 100%// Styles for the logo
+
+    &__list
+        display: flex
+        flex-flow: row wrap
+        justify-content: center
+        align-items: center
+        max-width: 100%// Styles for the list in the header
+
+        &--hover
+            cursor: pointer
+            transform: scale(1.1)// Styles for hover effect
+
+        &__item
+            max-width: 100%
+            font-size: 4vw
+            margin: 0 1rem
+            padding: 0 1rem
+            text-decoration: none
+            font-family: "FighterZ"
+            background-color: #ff6700
+            color: #0606a5
+            border-radius: 1rem
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+            0 1px 5px 0 rgba(0, 0, 0, 0.12);// Styles for each item in the list
+
+            &--hover
+                cursor: pointer
+                transform: scale(1.1)// Styles for hover effect on items
+
+/* Carousel */
+
+.carousel {
+  &__container {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+  }
+
+  &__slides {
+    display: none;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  &__button {
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 2rem;
+    padding: 1vw;
+    font-size: 1.5vw;
+    transition: background-color 0.6s ease;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  &__dots {
+    text-align: center;
+    margin: 1rem;
+
+    &__dot {
+      cursor: pointer;
+      height: 1rem;
+      width: 1rem;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      margin: 0 0.5rem;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+      &.active,
+      &:hover {
+        background-color: #717171;
+      }
+    }
+  }
+
+  &__slide--fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
