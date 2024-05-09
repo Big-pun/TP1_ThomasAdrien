@@ -1,8 +1,8 @@
 // TODO API variables et requête
 
-const searchInput = document.getElementById("search__input");
-const searchButton = document.getElementById("search__btn");
-const clearButton = document.getElementById("clear__btn");
+const searchInput = document.getElementById("search-input");
+const searchButton = document.getElementById("search-btn");
+const clearButton = document.getElementById("clear-btn");
 
 
 
@@ -43,17 +43,17 @@ const fetchData = async (searchName) => {
         const characterImage = characters.img;
         const abilities = characters.abilities;
 
-        const resultNameElement = document.getElementById("result__name");
+        const resultNameElement = document.getElementById("result-name");
         resultNameElement.textContent = characterName;
 
-        const resultBioElement = document.getElementById("result__bio");
+        const resultBioElement = document.getElementById("result-bio");
         resultBioElement.textContent = characterBio;
 
-        const resultImageElement = document.getElementById("result__img");
+        const resultImageElement = document.getElementById("result-img");
         resultImageElement.src = characterImage;
         resultImageElement.alt = characterName;
 
-        const resultAbilities = document.getElementById("result__abilities");
+        const resultAbilities = document.getElementById("result-abilities");
         resultAbilities.innerText = "Techniques spéciales: " + abilities.join(", ") + "."; 
         }
         
@@ -63,17 +63,17 @@ const fetchData = async (searchName) => {
     function clearData() { // Fonction qui supprime la data précédente
         console.log("clearData");
 
-        const resultNameElement = document.getElementById("result__name");
+        const resultNameElement = document.getElementById("result-name");
         resultNameElement.textContent = "";
 
-        const resultBioElement = document.getElementById("result__bio");
+        const resultBioElement = document.getElementById("result-bio");
         resultBioElement.textContent = "";
 
-        const resultImageElement = document.getElementById("result__img");
+        const resultImageElement = document.getElementById("result-img");
         resultImageElement.src = "";
         resultImageElement.alt = "";
 
-        const resultAbilities = document.getElementById("result__abilities");
+        const resultAbilities = document.getElementById("result-abilities");
         resultAbilities.innerHTML = "";
 
         searchInput.value = "";
