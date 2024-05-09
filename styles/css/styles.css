@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Saiyan_sans-left";
-  src: url("/fonts/saiyan_sans/Saiyan-Sans-20Left-20Oblique.ttf")
+  src: url("/fonts/Saiyan-Sans-Left-Oblique.ttf")
     format("truetype");
 }
 
 @font-face {
   font-family: "Saiyan_sans-right";
-  src: url("/fonts/saiyan_sans/Saiyan-Sans-20Right-20Oblique.ttf")
+  src: url("/fonts/Saiyan-Sans-Right-Oblique.ttf")
     format("truetype");
 }
 
@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: "Felina";
-  src: url("/fonts/FelinaT26\ Gothic\ Regular.otf") format("opentype");
+  src: url("/fonts/FelinaT26-Gothic-Regular.otf") format("opentype");
 }
 
 /* Container */
@@ -177,12 +177,12 @@ body {
 }
 
 /* Section personnages */
-.API__container {
+.api-container {
   border-top: 3px solid #0606a5;
   margin: 2rem;
 }
 
-.result__bio {
+.result-bio {
   max-width: 65ch;
   font-size: 2vw;
   font-family: "ProbaPro";
@@ -191,7 +191,7 @@ body {
   text-align: center;
 }
 
-.API__search {
+.api-search {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -284,7 +284,7 @@ body {
   font-size: 2vw;
 }
 
-.clear__btn {
+.clear-btn {
   margin: 2rem;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
@@ -294,7 +294,7 @@ body {
   font-size: 2vw;
 }
 
-.clear__btn--hover:hover {
+.clear-btn--hover:hover {
   cursor: pointer;
   transform: scale(1.1);
 }

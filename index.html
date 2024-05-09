@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TP1-Session2-Integration</title>
-    <link rel="stylesheet" href="/styles/css/styles.css" />
-    <link rel="stylesheet" href="/styles/css/normalize.css" />
+    <link rel="stylesheet" href="styles/css/styles.css" />
+    <link rel="stylesheet" href="styles/css/normalize.css" />
     <link class="flaticon" rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
 </head>
@@ -17,7 +17,7 @@
         <div class="header__background">
             <div class="container">
                 <nav class="header__nav">
-                    <a href="index.html"  header__logo--hover">
+                    <a href="index.html"  class="header__logo--hover">
                         <img class="header__logo" src="img/dragonball.svg" alt="The 4 Stars DragonBall">
                     </a>
                     
@@ -61,12 +61,12 @@
     </div>
 
     <!-- API des personnages -->
-    <div class="container" id="personnages">
-      <div class="api-container personnages">
+    <div class="container" >
+      <div class="api-container" id="personnages">
         <div class="result-bio"></div>
         <div class="api-search">
           <div class="search">
-            <label class="search__input-label" for="search-input">Entrez un nom pour trouver les infos du personnage</label>
+            <label class="search__input__label" for="search-input">Entrez un nom pour trouver les infos du personnage</label>
             <input class="search__input" id="search-input" type="text" placeholder="Nom du personnage" />
           </div>
           <button class="search__btn search__btn--hover" id="search-btn">Chercher un personnage</button>
@@ -74,13 +74,13 @@
       </div>
     </div>
     
-    <div class="result-background">
+    <div class="result__background">
       <div class="container">
-        <div class="result-card">
-          <img class="result-img" id="result-img" />
-          <div class="result-texte">
-            <div class="result-name" id="result-name"></div>
-            <div class="result-abilities" id="result-abilities"></div>
+        <div class="result__card">
+          <img class="result__img" id="result-img" />
+          <div class="result__texte">
+            <div class="result__name" id="result-name"></div>
+            <div class="result__abilities" id="result-abilities"></div>
           </div>
           <button class="clear-btn clear-btn--hover" id="clear-btn">Effacer</button>
         </div>
@@ -89,7 +89,7 @@
 
     <!-- A propos -->
 <div class="container">
-    <div class="intro intro--a-propos">
+    <div class="intro" id="a-propos">
         <div class="intro__titre">
             <h1 class="intro__h1">
                 <div class="h1-texte h1__left--yellow">Drag</div>
@@ -111,14 +111,14 @@
 
         <div class="trucs__container">
             <div class="truc">
-                <img class="truc__img" src="/img/dragonball.svg" alt="Une des 7 dragonball" />
+                <img class="truc__img" src="img/dragonball.svg" alt="Une des 7 dragonball" />
                 <h3 class="truc__h3">93% d'avis positifs</h3>
                 <p class="truc__p">Quand Dragon Ball Z : Kakarot est à son meilleur, c’est incroyable. Les grands
                     moments de chaque saga prennent vie de manière impeccable avec de superbes visuels et effets.
                 </p>
             </div>
             <div class="truc">
-                <img class="truc__img" src="/img/dragonball.svg" alt="Une des 7 dragonball" />
+                <img class="truc__img" src="img/dragonball.svg" alt="Une des 7 dragonball" />
                 <h3 class="truc__h3">Contenu additionnel</h3>
                 <p class="truc__p">Avec pas moins de 6 contenu additionnels téléchargeables disponibles a ce jour,
                     les
