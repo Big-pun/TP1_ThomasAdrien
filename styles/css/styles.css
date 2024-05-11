@@ -42,10 +42,10 @@ body {
 
 /* CSS Navbar */
 .header__background {
-  background-image: url("/img/svg-footer.svg");
+  background-image: url("/img/background.jpg") ;
+  background-repeat: no-repeat;
   background-size: 100%;
   background-position: top;
-  background-repeat: no-repeat;
   padding: 2rem;
 }
 
@@ -712,14 +712,13 @@ iframe {
 }
 
 footer {
-  background-image: url("/img/svg-footer.svg");
-  background-position: bottom;
+  background-image: url("/img/background.jpg") ;
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-position: bottom;
+  background-size: 100%;
   margin-top: 2rem;
   padding: 2rem;
   font-size: 1.5vw;
-
 }
 
 .logo-links {
