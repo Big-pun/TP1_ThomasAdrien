@@ -1,26 +1,26 @@
 @font-face {
   font-family: "Saiyan_sans-left";
-  src: url("/fonts/Saiyan-Sans-Left-Oblique.ttf") format("truetype");
+  src: url("fonts/Saiyan-Sans-Left-Oblique.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Saiyan_sans-right";
-  src: url("/fonts/Saiyan-Sans-Right-Oblique.ttf") format("truetype");
+  src: url("fonts/Saiyan-Sans-Right-Oblique.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "FighterZ";
-  src: url("/fonts/DragonBallFighterz-Regular.ttf") format("truetype");
+  src: url("fonts/DragonBallFighterz-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "ProbaPro";
-  src: url("/fonts/ProbaPro-Regular.otf") format("opentype");
+  src: url("fonts/ProbaPro-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Felina";
-  src: url("/fonts/FelinaT26-Gothic-Regular.otf") format("opentype");
+  src: url("fonts/FelinaT26-Gothic-Regular.otf") format("opentype");
 }
 
 /* Container */
@@ -42,7 +42,7 @@ body {
 
 /* CSS Navbar */
 .header__background {
-  background-image: url("/img/background.jpg") ;
+  background-image: url("../../img/background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top;
@@ -661,7 +661,7 @@ iframe {
   width: 100%;
 }
 
-.form__group--nom {
+.form__nom {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -711,8 +711,32 @@ iframe {
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
+form span{
+  color: red;
+  font-size: 1vw;
+  margin:0.5rem;
+}
+
+/* validation du form */
+
+.form__group.success input {
+  border-color: #09c372;
+}
+
+.form__group.error input {
+  border-color: #ff3860;
+}
+
+.form__group .errorMessage {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+/* footer */
+
+
 footer {
-  background-image: url("/img/background.jpg") ;
+  background-image: url("../../img/background.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100%;

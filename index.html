@@ -246,29 +246,36 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 <div class="form__container">
-                    <form class="form" id="form">
+                    <form class="form" id="form" onsubmit="return validateForm()" novalidate>
                         <h3 class="form__h3">Envoyez-nous un message</h3>
                         <div class="form__wrapper">
-                            <div class="form__group--nom">
+
+                            <div class="form__nom">
                                 <div class="form__group">
-                                    <label for="name" class="form__label">Nom de famille</label>
+                                    <label for="name" class="form__label">Nom de famille<span>*</span></label>
                                     <input type="text" id="name" class="form__input" placeholder="Entrez votre nom" />
+                                    <div class="errorMessage"></div>
                                 </div>
                                 <div class="form__group">
-                                    <label for="first-name" class="form__label">Prénom</label>
+                                    <label for="first-name" class="form__label">Prénom<span>*</span></label>
                                     <input type="text" id="first-name" class="form__input"
                                         placeholder="Entrez votre prénom" />
+                                    <div class="errorMessage"></div>
                                 </div>
                             </div>
+
                             <div class="form__group">
-                                <label for="email" class="form__label">Email</label>
+                                <label for="email" class="form__label">Email<span>*</span></label>
                                 <input type="email" id="email" class="form__input"
                                     placeholder="Entrez votre courriel" />
+                                <div class="errorMessage"></div>
                             </div>
+
                             <div class="form__group">
-                                <label for="message" class="form__label">Message</label>
-                                <textarea id="message" class="form__input"
-                                    placeholder="Entrez votre message"></textarea>
+                                <label for="message" class="form__label">Message<span>*</span></label>
+                                <input id="message" class="form__input"
+                                    placeholder="Entrez votre message"></input>
+                                <div class="errorMessage"></div>
                             </div>
                         </div>
                         <button type="submit" class="form__button">Envoyer</button>
@@ -289,7 +296,8 @@
                 <div class="logo-links">
 
                     <div class="logo-links__logo logo-links__logo--hover">
-                        <a href="index.html"><img class="footer-liens" src="img/dragonball.svg" alt="Une des 7 Dragonball"></a>
+                        <a href="index.html"><img class="footer-liens" src="img/dragonball.svg"
+                                alt="Une des 7 Dragonball"></a>
                     </div>
 
                     <div class="logo-links__liens">
@@ -311,13 +319,13 @@
                     <div class="footer-down__item">Fait par : Adrien Thomas</div>
 
                     <div class="footer-down__item footer-liens">
-                        <a href="https://github.com/Big-pun"><img src="img/github.png"
-                                alt="github">Github</a></div>
+                        <a href="https://github.com/Big-pun"><img src="img/github.png" alt="github">Github</a>
+                    </div>
 
                     <div class="footer-down__items">
 
                         <div class="footer-down__item footer-liens">
-                            <a href="mailto:cegep@troisrivieres.ca"><img src="img/email.png" alt="Courriel"> 
+                            <a href="mailto:cegep@troisrivieres.ca"><img src="img/email.png" alt="Courriel">
                                 cegep@troisrivieres.ca</a>
                         </div>
 
@@ -332,6 +340,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="form.js"></script>
     <script src="fetch.js"></script>
 </body>
 
