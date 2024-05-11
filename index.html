@@ -34,7 +34,7 @@
 
     <div class="container">
         <main id="content">
-            <div class="carousel__container">
+            <div class="carousel__container" id="gameplay">
                 <a class="carousel__button" onclick="plusSlides(-1)">&#10094;</a>
 
                 <div class="carousel__main">
@@ -246,7 +246,7 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 <div class="form__container">
-                    <form class="form">
+                    <form class="form" id="form">
                         <h3 class="form__h3">Envoyez-nous un message</h3>
                         <div class="form__wrapper">
                             <div class="form__group--nom">
@@ -284,31 +284,48 @@
 
     <footer>
         <div class="container">
-            <section>
+            <section class="footer-up">
                 <!-- Logo & liens -->
                 <div class="logo-links">
 
                     <div class="logo-links__logo logo-links__logo--hover">
-                        <a href="index.html"><img src="img/dragonball.svg" alt="The 4 stars Dragon ball"></a>
+                        <a href="index.html"><img class="footer-liens" src="img/dragonball.svg" alt="Une des 7 Dragonball"></a>
                     </div>
 
                     <div class="logo-links__liens">
-                        <a href="#personnages">Personnages</a>
-                        <a href="#a-propos">A propos</a>
-                        <a href="#galerie">Galerie</a>
-                        <a href="#equipe">Equipe</a>
+                        <a class="footer-liens" href="#gameplay">Gameplay</a>
+                        <a class="footer-liens" href="#personnages">Personnages</a>
+                        <a class="footer-liens" href="#a-propos">A propos</a>
+                        <a class="footer-liens" href="#galerie">Galerie</a>
+                        <a class="footer-liens" href="#equipe">Equipe</a>
+                        <a class="footer-liens" href="form">Contact</a>
                     </div>
 
                 </div>
 
             </section>
 
-            <section class="footer__section">
+            <section>
                 <!-- Signatures // Reseaux // Contacts-->
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="footer-down">
+                    <div class="footer-down__item">Fait par : Adrien Thomas</div>
+
+                    <div class="footer-down__item footer-liens">
+                        <a href="https://github.com/Big-pun"><img src="img/github.png"
+                                alt="github">Github</a></div>
+
+                    <div class="footer-down__items">
+
+                        <div class="footer-down__item footer-liens">
+                            <a href="mailto:cegep@troisrivieres.ca"><img src="img/email.png" alt="Courriel"> 
+                                cegep@troisrivieres.ca</a>
+                        </div>
+
+                        <div class="footer-down__item  footer-liens">
+                            <img src="img/telephone.png" alt="Telephone"><a href="tel:13334445555">
+                                1-333-444-5555</a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

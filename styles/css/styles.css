@@ -26,7 +26,6 @@
 /* Container */
 .container {
   max-width: 1200px;
-  padding: 0 1rem;
   margin: 0 auto;
 }
 
@@ -43,11 +42,11 @@ body {
 
 /* CSS Navbar */
 .header__background {
-  background-image: url("/img/header__background.svg");
-  background-size: 100% auto;
-  background-position: center;
+  background-image: url("/img/svg-footer.svg");
+  background-size: 100%;
+  background-position: top;
   background-repeat: no-repeat;
-  object-fit: cover;
+  padding: 2rem;
 }
 
 .header__nav {
@@ -176,7 +175,6 @@ body {
 /* Section personnages */
 .api-container {
   border-top: 3px solid #0606a5;
-  margin: 2rem;
 }
 
 .result-bio {
@@ -629,8 +627,9 @@ body {
 .map-form__container {
   position: relative;
   border-top: 3px solid #0606a5;
-  padding-top: 2rem;
-  margin: 2rem;
+  padding: 2rem 0;
+  margin: 2rem 0;
+  border-bottom: 3px solid #0606a5;
 }
 
 iframe {
@@ -714,6 +713,13 @@ iframe {
 
 footer {
   background-image: url("/img/svg-footer.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  margin-top: 2rem;
+  padding: 2rem;
+  font-size: 1.5vw;
+
 }
 
 .logo-links {
@@ -721,17 +727,11 @@ footer {
   flex-flow: column wrap;
   align-items: center;
   width: 100%;
-  margin: 2rem;
+  margin: 0 auto;
 }
 
 .logo-links__logo {
   max-width: 10vw;
-  margin: 2rem;
-}
-
-.logo-links__logo:hover {
-  cursor: pointer;
-  transform: scale(1.1);
 }
 
 .logo-links__logo img {
@@ -739,20 +739,70 @@ footer {
 }
 
 .logo-links__liens {
-width: 100%;
-padding: 2rem;
-display: flex;
-flex-flow: row nowrap;
-justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: white 3px solid;
 }
 
 .logo-links__liens a {
   font-family: "ProbaPro";
-  font-size: 1.5vw;
-  text-decoration: none;
-  color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  background-color: #717171;
 }
 
-.logo-links__liens a:hover {
+.footer-down {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  font-family: "ProbaPro";
+  max-width: 100%;
+}
+
+.footer-down img {
+  max-width: 1.5vw;
+}
+
+.footer-down__item {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  color: white;
+  max-width: 100%;
+  background-color: #717171;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-down__items {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+.footer-down__item a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer-liens{
+text-decoration: underline;
+}
+
+.footer-liens:hover {
+  cursor: pointer;
   transform: scale(1.1);
 }
