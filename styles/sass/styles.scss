@@ -10,55 +10,39 @@ $font-family_2: "ProbaPro";
 $font-family_3: "Felina";
 $font-family_4: "Saiyan_sans-left";
 $font-family_5: "Saiyan_sans-right";
-$background-color_1: #f2f5f2;
-$background-color_2: #ff6700;
-$background-color_3: black;
-$background-color_4: #bbb;
-$background-color_5: #717171;
-$background-color_6: #0606a5;
-$background-color_7: #5db5e9;
-$background-color_8: #dfab9a;
-$background-color_9: #7b777b;
-$background-color_10: #a7eff5;
-$background-color_11: #bf65c5;
-$background-color_12: #db9578;
+$background-color_3: rgba(0, 0, 0, 0.5);
+$background-color_4: rgba(0, 0, 0, 0.8);
+$background-color_5: #bbb;
+$background-color_6: #717171;
+$background-color_13: #db9578;
 $border-color_1: #09c372;
 $border-color_2: #ff0000;
+$shadow-light:  0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+$shadow-deep: -12px 16px 38px -12px rgba(0, 0, 0, 0.56),-4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
 
-@font-face {
-	font-family: "Saiyan_sans-left";
-	src: url("../../fonts/Saiyan-Sans-Left-Oblique.ttf") format("truetype");
+$font-faces: (
+  "Saiyan_sans-left": ("../../fonts/Saiyan-Sans-Left-Oblique.ttf", "truetype"),
+  "Saiyan_sans-right": ("../../fonts/Saiyan-Sans-Right-Oblique.ttf", "truetype"),
+  "FighterZ": ("../../fonts/DragonBallFighterz-Regular.ttf", "truetype"),
+  "ProbaPro": ("../../fonts/ProbaPro-Regular.otf", "opentype"),
+  "Felina": ("../../fonts/FelinaT26-Gothic-Regular.otf", "opentype")
+);
+
+@each $font-family, $font-details in $font-faces {
+  $font-path: nth($font-details, 1);
+  $font-format: nth($font-details, 2);
+  @font-face {
+    font-family: $font-family;
+    src: url($font-path) format($font-format);
+  }
 }
-@font-face {
-	font-family: "Saiyan_sans-right";
-	src: url("../../fonts/Saiyan-Sans-Right-Oblique.ttf") format("truetype");
-}
-@font-face {
-	font-family: "FighterZ";
-	src: url("../../fonts/DragonBallFighterz-Regular.ttf") format("truetype");
-}
-@font-face {
-	font-family: "ProbaPro";
-	src: url("../../fonts/ProbaPro-Regular.otf") format("opentype");
-}
-@font-face {
-	font-family: "Felina";
-	src: url("../../fonts/FelinaT26-Gothic-Regular.otf") format("opentype");
-}
+
 /* Container */
 /* Body */
 /* Cacher le lien pour liseuse */
 /* CSS Navbar */
 /* Carousel */
 /* Fading animation */
-@keyframes fade {
-	from {
-		opacity: 0.4;
-	}
-	to {
-		opacity: 1;
-	}
-}
 /* Section personnages */
 /* Introduction */
 /* Trucs */
@@ -73,7 +57,7 @@ $border-color_2: #ff0000;
 	margin: 0 auto;
 }
 body {
-	background-color: $background-color_1;
+	background-color: $color_3;
 	background-image: url("data:image/svg+xml,%3Csvg width='38' height='38' viewBox='0 0 38 38' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='bevel-circle' fill='%23a2adc7' fill-opacity='0.14'%3E%3Cpath d='M10.414 29l-8 8h33.172l-8-8H10.414zM9 27.586l-8 8V2.414l8 8v17.172zM10.414 9l-8-8h33.172l-8 8H10.414zM29 10.414l8-8v33.172l-8-8V10.414zM11 11h16v16H11V11zm8 14c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM0 0h38v38H0V0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 .screen-reader-text {
@@ -114,10 +98,10 @@ body {
 	padding: 0 1rem;
 	text-decoration: none;
 	font-family: $font-family_1;
-	background-color: $background-color_2;
+	background-color: $color_7;
 	color: $color_1;
 	border-radius: 1rem;
-	box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
+	box-shadow: $shadow-light;
 }
 .header__item--hover {
 	&:hover {
@@ -140,7 +124,7 @@ body {
 	img {
 		width: 100%;
 		height: auto;
-		box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
+		box-shadow: $shadow-light;
 	}
 }
 .carousel__button {
@@ -154,9 +138,9 @@ body {
 	padding: 1vw;
 	font-size: 1.5vw;
 	transition: background-color 0.6s ease;
-	box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
+	box-shadow: $shadow-light;
 	&:hover {
-		background-color: $background-color_3;
+		background-color: $background-color_4;
 	}
 }
 .carousel__dots {
@@ -167,25 +151,35 @@ body {
 	cursor: pointer;
 	height: 1rem;
 	width: 1rem;
-	background-color: $background-color_4;
+	background-color: $background-color_5;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
 	margin: 0 0.5rem;
-	box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
+	box-shadow: $shadow-light;
 }
 .active {
-	background-color: $background-color_5;
+	background-color: $background-color_6;
 }
 .dot {
 	&:hover {
-		background-color: $background-color_5;
+		background-color: $background-color_6;
 	}
 }
 .carousel__slide--fade {
 	animation-name: fade;
 	animation-duration: 1.5s;
 }
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 .api-container {
 	border-top: 3px solid #0606a5;
 }
@@ -210,7 +204,7 @@ body {
 	border-radius: 1rem;
 	margin: 1rem;
 	text-align: center;
-	box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
+	box-shadow: $shadow-light;
 }
 .search__input__label {
 	font-size: 1.5vw;
@@ -224,7 +218,7 @@ body {
 	padding: 0.5rem 1rem;
 	border-radius: 1rem;
 	font-family: $font-family_3;
-	background-color: $background-color_2;
+	background-color: $color_7;
 	color: $color_1;
 }
 .search__btn--hover {
@@ -234,7 +228,7 @@ body {
 	}
 }
 .result__background {
-	background-color: $background-color_4;
+	background-color: $background-color_5;
 	padding: 1rem;
 }
 .result__card {
@@ -243,11 +237,11 @@ body {
 	flex-flow: column wrap;
 	align-items: center;
 	padding: 2rem;
-	background-color: $background-color_6;
+	background-color: $color_1;
 	margin: 0 auto;
 	border: 1vw solid #f2f5f2;
 	border-radius: 3rem;
-	box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
+	box-shadow: $shadow-light;
 }
 .result__img {
 	width: 100%;
@@ -279,7 +273,7 @@ body {
 	padding: 0.5rem 1rem;
 	border-radius: 1rem;
 	font-family: $font-family_3;
-	background-color: $background-color_1;
+	background-color: $color_3;
 	color: $color_4;
 	font-size: 2vw;
 }
@@ -382,7 +376,7 @@ body {
 }
 .galerie__item {
 	border-radius: 1rem;
-	box-shadow: -12px 16px 38px -12px black, -4px 4px 25px 0px black, -8px 8px 10px -5px black;
+	box-shadow: $shadow-deep;
 	img {
 		width: 100%;
 		height: 100%;
@@ -391,21 +385,21 @@ body {
 	}
 }
 #item-0 {
-	background-color: $background-color_7;
+
 	grid-row-start: 3;
 	grid-column-start: 1;
 	grid-row-end: 7;
 	grid-column-end: 5;
 }
 #item-1 {
-	background-color: $background-color_8;
+
 	grid-row-start: 1;
 	grid-column-start: 5;
 	grid-row-end: 5;
 	grid-column-end: 11;
 }
 #item-2 {
-	background-color: $background-color_9;
+
 	grid-row-start: 5;
 	grid-column-start: 5;
 	grid-row-end: 8;
@@ -418,14 +412,14 @@ body {
 	grid-column-end: 14;
 }
 #item-4 {
-	background-color: $background-color_10;
+
 	grid-row-start: 2;
 	grid-column-start: 11;
 	grid-row-end: 5;
 	grid-column-end: 14;
 }
 #item-5 {
-	background-color: $background-color_11;
+
 	grid-row-start: 3;
 	grid-column-start: 14;
 	grid-row-end: 7;
@@ -479,15 +473,19 @@ body {
 	padding: 0.5rem 1rem;
 	text-decoration: none;
 	font-family: $font-family_3;
-	background-color: $background-color_2;
+	background-color: $color_7;
 	color: $color_1;
 	border-radius: 0.5rem;
-	box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
+	box-shadow: $shadow-light;
 	margin: 2rem 0rem;
 	border: 1px solid #0606a5;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
 }
 .background__cartes {
-	background-color: $background-color_2;
+	background-color: $color_7;
 }
 .membres__wrapper {
 	display: flex;
@@ -505,7 +503,7 @@ body {
 	margin-bottom: 2rem;
 }
 .equipe__text {
-	background-color: $background-color_1;
+	background-color: $color_3;
 	margin-top: 2rem;
 	display: flex;
 	flex-flow: column wrap;
@@ -515,7 +513,7 @@ body {
 	max-width: 100%;
 	border-radius: 1rem;
 	padding: 1rem;
-	box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
+	box-shadow: $shadow-light;
 }
 .equipe__h2 {
 	font-family: $font-family_3;
@@ -531,11 +529,11 @@ body {
 .equipe__carte {
 	max-width: min-content;
 	margin: 2rem 1rem;
-	background-color: $background-color_1;
+	background-color: $color_1;
 	padding: 1rem;
 	border-radius: 1rem;
 	padding-bottom: 0rem;
-	box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
+	box-shadow:$shadow-light;
 }
 .membre {
 	position: relative;
@@ -544,8 +542,8 @@ body {
 	img {
 		width: 200px;
 		border-radius: 1rem;
-		background-color: $background-color_12;
-		box-shadow: -12px 16px 38px -12px black, -4px 4px 25px 0px black, -8px 8px 10px -5px black;
+		background-color: $background-color_13;
+		box-shadow: $shadow-deep;
 	}
 }
 .membre__h3 {
@@ -575,7 +573,7 @@ body {
 }
 iframe {
 	border-radius: 1rem;
-	box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
+	box-shadow: $shadow-light;
 	position: relative;
 	z-index: 1;
 	width: 100%;
@@ -586,10 +584,10 @@ iframe {
 	top: 25%;
 	left: 53%;
 	z-index: 2;
-	background-color: $background-color_4;
+	background-color: $background-color_5;
 	padding: 1rem;
 	border-radius: 1rem;
-	box-shadow: -12px 16px 38px -12px black, -4px 4px 25px 0px black, -8px 8px 10px -5px black;
+	box-shadow: $shadow-deep;
 }
 .form__wrapper {
 	display: flex;
@@ -646,10 +644,10 @@ iframe {
 	padding: 0.5rem 1rem;
 	text-decoration: none;
 	font-family: $font-family_3;
-	background-color: $background-color_1;
+	background-color: $color_1;
 	color: $color_4;
 	border-radius: 0.5rem;
-	box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
+	box-shadow: $shadow-light;
 }
 form {
 	span {
@@ -704,8 +702,8 @@ footer {
 		color: $color_2;
 		padding: 0.5rem 1rem;
 		border-radius: 1rem;
-		box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
-		background-color: $background-color_5;
+		box-shadow: $shadow-light;
+		background-color: $background-color_6;
 	}
 }
 .footer-down {
@@ -723,10 +721,10 @@ footer {
 .footer-down__item {
 	padding: 0.5rem 1rem;
 	border-radius: 1rem;
-	box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black, 0 1px 5px 0 black;
+	box-shadow: $shadow-light;
 	color: $color_2;
 	max-width: 100%;
-	background-color: $background-color_5;
+	background-color: $background-color_6;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
