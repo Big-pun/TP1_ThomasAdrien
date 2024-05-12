@@ -48,7 +48,7 @@ body {
 }
 
 .header__background {
-  background-image: url("../../img/background.jpg");
+  background-image: url("../../img/header__background.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top;
@@ -62,7 +62,7 @@ body {
 }
 
 .header__logo {
-  max-width: 10vw;
+  max-width: 15vw;
 }
 
 .header__logo--hover:hover {
@@ -81,7 +81,7 @@ body {
 .header__item {
   max-width: 100%;
   font-size: 4vw;
-  margin: 0 1rem;
+  margin: 1rem 1rem;
   padding: 0 1rem;
   text-decoration: none;
   font-family: "FighterZ";
@@ -181,6 +181,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
+  font-family: "ProbaPro";
 }
 
 .search {
@@ -188,11 +189,10 @@ body {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  font-family: "ProbaPro";
 }
 
 .search__input {
-  font-size: 1.5vw;
+  font-size: 2vw;
   padding: 0.5rem 1rem;
   border: 1px solid #0606a5;
   border-radius: 1rem;
@@ -202,7 +202,7 @@ body {
 }
 
 .search__input__label {
-  font-size: 1.5vw;
+  font-size: 3vw;
   margin: 1rem;
   max-width: 25ch;
   text-align: center;
@@ -318,19 +318,16 @@ body {
 .h1__left--yellow {
   color: #f7d000;
   font-family: "Saiyan_sans-left";
-  text-shadow: 0.5vw 0.5vw 0.5vw black;
 }
 
 .h1__right--red {
   color: #ff0000;
   font-family: "Saiyan_sans-right";
-  text-shadow: 0.5vw 0.5vw 0.5vw black;
 }
 
 .h1__left--orange {
   color: #ff6700;
   font-family: "Saiyan_sans-left";
-  text-shadow: 0.5vw 0.5vw 0.5vw black;
 }
 
 .intro__h2 {
@@ -342,7 +339,7 @@ body {
 .intro__p {
   max-width: 65ch;
   font-family: "ProbaPro";
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin: 0 auto;
   margin-top: 1rem;
 }
@@ -368,16 +365,17 @@ body {
 
 .truc__h3 {
   font-family: "Felina";
-  font-size: 2vw;
+  font-size: 3vw;
   text-align: center;
   margin: 0 auto;
 }
 
 .truc__p {
   font-family: "ProbaPro";
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-align: center;
   max-width: 65ch;
+  margin: 0.5rem;
 }
 
 .galerie--grid {
@@ -516,14 +514,6 @@ body {
   background-color: #ff6700;
 }
 
-.membres__wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: stretch;
-  margin: 0 auto;
-}
-
 .equipe {
   display: flex;
   flex-flow: column wrap;
@@ -547,6 +537,14 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
+.membres__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 0 auto;
+}
+
 .equipe__h2 {
   font-family: "Felina";
   font-size: 3vw;
@@ -563,7 +561,7 @@ body {
 .equipe__carte {
   max-width: min-content;
   margin: 2rem 1rem;
-  background-color: #0606a5;
+  background-color: #f2f5f2;
   padding: 1rem;
   border-radius: 1rem;
   padding-bottom: 0rem;
@@ -574,41 +572,49 @@ body {
   position: relative;
   top: -3rem;
   border-radius: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 .membre img {
   width: 200px;
   border-radius: 1rem;
   background-color: #db9578;
   box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56), -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 }
 
 .membre__h3 {
   font-family: "Felina";
-  font-size: 2vw;
+  font-size: 2em;
   text-align: center;
   margin: 0.5rem;
 }
 
 .membre__h4 {
   font-family: "Felina";
-  font-size: 1.5vw;
+  font-size: 1.5em;
   text-align: center;
   margin: 0.5rem;
 }
 
 .membre__p {
   font-family: "ProbaPro";
-  font-size: 1.5vw;
+  font-size: 1.5em;
   text-align: center;
   max-width: 65ch;
 }
 
 .map-form__container {
-  position: relative;
   border-top: 3px solid #0606a5;
   padding: 2rem 0;
-  margin: 2rem 0;
+  margin: 2rem 2rem;
   border-bottom: 3px solid #0606a5;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
 }
 
 iframe {
@@ -616,14 +622,13 @@ iframe {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   position: relative;
   z-index: 1;
-  width: 100%;
+  min-width: 50%;
+  max-width: 75%;
   height: 50vw;
 }
 
 .form__container {
-  position: absolute;
-  top: 25%;
-  left: 53%;
+  max-width: 100%;
   z-index: 2;
   background-color: #bbb;
   padding: 1rem;
@@ -644,7 +649,7 @@ iframe {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: flex-end;
   width: 100%;
   gap: 0.5rem;
 }
@@ -658,17 +663,12 @@ iframe {
 }
 .form__group > input {
   font-family: "ProbaPro";
-  font-size: 1.5vw;
-  width: 100%;
-}
-.form__group > textarea {
-  font-family: "ProbaPro";
-  font-size: 1.5vw;
+  font-size: 2vw;
   width: 100%;
 }
 .form__group .errorMessage {
   color: #ff0000;
-  font-size: 9px;
+  font-size: 2vw;
   height: 13px;
 }
 
@@ -681,17 +681,17 @@ iframe {
 
 .form__label {
   font-family: "ProbaPro";
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin: 0.5rem;
 }
 
 .form__button {
   font-size: 2vw;
   margin: 1rem 0rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5vw 1vw;
   text-decoration: none;
   font-family: "Felina";
-  background-color: #0606a5;
+  background-color: white;
   color: black;
   border-radius: 0.5rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -712,13 +712,12 @@ form span {
 }
 
 footer {
-  background-image: url("../../img/background.jpg");
+  background-image: url("../../img/svg-footer.svg");
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100%;
   margin-top: 2rem;
   padding: 2rem;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 .logo-links {
@@ -730,7 +729,7 @@ footer {
 }
 
 .logo-links__logo {
-  max-width: 10vw;
+  max-width: 15vw;
 }
 .logo-links__logo img {
   max-width: 100%;
@@ -738,11 +737,9 @@ footer {
 
 .logo-links__liens {
   width: 100%;
-  margin: 0 auto;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
-  margin-top: 1rem;
   padding-bottom: 2rem;
   border-bottom: white 3px solid;
 }
@@ -753,19 +750,20 @@ footer {
   border-radius: 1rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   background-color: #717171;
+  margin: 0.5rem;
 }
 
 .footer-down {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 2rem;
   font-family: "ProbaPro";
   max-width: 100%;
 }
 .footer-down img {
-  max-width: 1.5vw;
+  max-width: 1.5em;
 }
 
 .footer-down__item {
@@ -778,7 +776,7 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  gap: 0.5rem;
+  margin: 0.5rem;
 }
 .footer-down__item a {
   color: white;
@@ -788,6 +786,7 @@ footer {
 .footer-down__items {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-evenly;
   gap: 1rem;
 }
 
