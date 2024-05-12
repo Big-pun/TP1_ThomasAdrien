@@ -63,14 +63,15 @@
     <!-- API des personnages -->
     <div class="container">
         <div class="api-container" id="personnages">
-            <div class="result-bio" id="result-bio"></div>
             <div class="api-search">
+
+                <label class="search__input__label" for="search-input">Entrez un nom pour trouver les infos du
+                    personnage</label>
                 <div class="search">
-                    <label class="search__input__label" for="search-input">Entrez un nom pour trouver les infos du
-                        personnage</label>
                     <input class="search__input" id="search-input" type="text" placeholder="Nom du personnage" />
+
+                    <button class="search__btn search__btn--hover" id="search-btn">Chercher un personnage</button>
                 </div>
-                <button class="search__btn search__btn--hover" id="search-btn">Chercher un personnage</button>
             </div>
         </div>
     </div>
@@ -78,10 +79,13 @@
     <div class="result__background">
         <div class="container">
             <div class="result__card">
-                <img class="result__img" id="result-img" />
+                <img class="result__img" id="result-img" src="assets/goku.png" alt="Goku" />
                 <div class="result__texte">
-                    <div class="result__name" id="result-name"></div>
-                    <div class="result__abilities" id="result-abilities"></div>
+                    <div class="result__name" id="result-name">Goku</div>
+                    <div class="result-bio" id="result-bio">Goku, né Kakarot, est un Saiyan mâle et le principal
+                        protagoniste de la série Dragon Ball.</div>
+                    <div class="result__abilities" id="result-abilities">Techniques spéciales: Transformations Super
+                        Saiyan, Super Kamehameha, Super poing de dragon.</div>
                 </div>
                 <button class="clear-btn clear-btn--hover" id="clear-btn">Effacer</button>
             </div>
@@ -273,8 +277,7 @@
 
                             <div class="form__group">
                                 <label for="message" class="form__label">Message<span>*</span></label>
-                                <input id="message" class="form__input"
-                                    placeholder="Entrez votre message"></input>
+                                <input id="message" class="form__input" placeholder="Entrez votre message"></input>
                                 <div class="errorMessage"></div>
                             </div>
                         </div>
