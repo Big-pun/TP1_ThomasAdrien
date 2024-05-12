@@ -82,8 +82,8 @@ body {
   background-color: #ff6700;
   color: #0606a5;
   border-radius: 1rem;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
 }
 
 .header__item--hover:hover {
@@ -111,13 +111,13 @@ body {
 .carousel__slides img {
   width: 100%;
   height: auto;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
 }
 
 .carousel__button {
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   color: white;
   border: none;
   border-radius: 50%;
@@ -126,12 +126,12 @@ body {
   padding: 1vw;
   font-size: 1.5vw;
   transition: background-color 0.6s ease;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
 }
 
 .carousel__button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: black;
 }
 
 .carousel__dots {
@@ -148,8 +148,8 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease;
   margin: 0 0.5rem;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
 }
 
 .active,
@@ -202,8 +202,8 @@ body {
   border-radius: 1rem;
   margin: 1rem;
   text-align: center;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
 }
 
 .search__input__label {
@@ -243,8 +243,8 @@ body {
   margin: 0 auto;
   border: 1vw solid #f2f5f2;
   border-radius: 3rem;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
 }
 
 .result__img {
@@ -405,8 +405,8 @@ margin: 1rem 0rem;
 
 .galerie__item {
   border-radius: 1rem;
-  box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56),
-    -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: -12px 16px 38px -12px black,
+    -4px 4px 25px 0px black, -8px 8px 10px -5px black;
 }
 
 .galerie__item img {
@@ -525,8 +525,8 @@ margin: 1rem 0rem;
   background-color: #ff6700;
   color: #0606a5;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
   margin: 2rem 0rem;
   border: 1px solid #0606a5;
 }
@@ -564,8 +564,8 @@ margin: 1rem 0rem;
   max-width: 100%;
   border-radius: 1rem;
   padding: 1rem;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
 }
 
 .equipe__h2 {
@@ -588,8 +588,8 @@ margin: 1rem 0rem;
   padding: 1rem;
   border-radius: 1rem;
   padding-bottom: 0rem;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
 }
 
 .membre {
@@ -602,8 +602,8 @@ margin: 1rem 0rem;
   width: 200px;
   border-radius: 1rem;
   background-color: #db9578;
-  box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56),
-    -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: -12px 16px 38px -12px black,
+    -4px 4px 25px 0px black, -8px 8px 10px -5px black;
 }
 
 .membre__h3 {
@@ -639,8 +639,8 @@ margin: 1rem 0rem;
 
 iframe {
   border-radius: 1rem;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
   position: relative;
   z-index: 1;
   width: 100%;
@@ -655,8 +655,8 @@ iframe {
   background-color: #bbb;
   padding: 1rem;
   border-radius: 1rem;
-  box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56),
-    -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: -12px 16px 38px -12px black,
+    -4px 4px 25px 0px black, -8px 8px 10px -5px black;
 }
 
 .form__wrapper {
@@ -714,12 +714,12 @@ iframe {
   background-color: #f2f5f2;
   color: black;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
 }
 
 form span{
-  color: red;
+  color: #ff0000;
   font-size: 1vw;
   margin:0.5rem;
 }
@@ -731,11 +731,11 @@ form span{
 }
 
 .form__group.error input {
-  border-color: #ff3860;
+  border-color: #ff0000;
 }
 
 .form__group .errorMessage {
-  color: #ff3860;
+  color: #ff0000;
   font-size: 9px;
   height: 13px;
 }
@@ -784,8 +784,8 @@ footer {
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
   background-color: #717171;
 }
 
@@ -806,8 +806,8 @@ footer {
 .footer-down__item {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 black, 0 3px 1px -2px black,
+    0 1px 5px 0 black;
   color: white;
   max-width: 100%;
   background-color: #717171;
