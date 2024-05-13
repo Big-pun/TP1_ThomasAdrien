@@ -80,7 +80,7 @@ body {
 
 .header__item {
   max-width: 100%;
-  font-size: 4vw;
+  font-size: 3em;
   margin: 1rem 1rem;
   padding: 0 1rem;
   text-decoration: none;
@@ -192,7 +192,7 @@ body {
 }
 
 .search__input {
-  font-size: 2vw;
+  font-size: 1.5em;
   padding: 0.5rem 1rem;
   border: 1px solid #0606a5;
   border-radius: 1rem;
@@ -202,14 +202,14 @@ body {
 }
 
 .search__input__label {
-  font-size: 3vw;
+  font-size: 2em;
   margin: 1rem;
   max-width: 25ch;
   text-align: center;
 }
 
 .search__btn {
-  font-size: 2vw;
+  font-size: 1.5em;
   margin: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
@@ -252,7 +252,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  font-size: 2vw;
+  font-size: 2em;
   max-width: 65ch;
   font-family: "ProbaPro";
   color: #f2f5f2;
@@ -264,11 +264,7 @@ body {
 }
 
 .result__name {
-  font-size: 3vw;
-}
-
-.result__abilities {
-  font-size: 2vw;
+  font-size: 2em;
 }
 
 .clear-btn {
@@ -278,7 +274,7 @@ body {
   font-family: "Felina";
   background-color: #f2f5f2;
   color: black;
-  font-size: 2vw;
+  font-size: 1em;
 }
 
 .clear-btn--hover:hover {
@@ -306,7 +302,7 @@ body {
   flex-flow: row nowrap !important;
   align-items: center;
   justify-content: center;
-  font-size: 5vw;
+  font-size: 8vw;
   margin: 0 auto;
 }
 .intro__h1 h1 {
@@ -320,40 +316,42 @@ body {
   font-family: "Saiyan_sans-left";
 }
 
-.h1__right--red {
-  color: #ff0000;
-  font-family: "Saiyan_sans-right";
-}
-
 .h1__left--orange {
   color: #ff6700;
   font-family: "Saiyan_sans-left";
 }
 
+.h1__right--red {
+  color: #ff0000;
+  font-family: "Saiyan_sans-right";
+}
+
 .intro__h2 {
   font-family: "Felina";
-  font-size: 4vw;
+  font-size: 3em;
   margin: 0 auto;
 }
 
 .intro__p {
   max-width: 65ch;
   font-family: "ProbaPro";
-  font-size: 2vw;
+  font-size: 1.5em;
   margin: 0 auto;
   margin-top: 1rem;
 }
 
 .trucs__container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: flex-start;
   margin: 2rem;
+  max-width: 100%;
 }
 
 .truc {
-  width: 33%;
+  max-width: 33%;
+  min-width: 35ch;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -365,17 +363,19 @@ body {
 
 .truc__h3 {
   font-family: "Felina";
-  font-size: 3vw;
+  font-size: 2em;
   text-align: center;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .truc__p {
   font-family: "ProbaPro";
-  font-size: 2vw;
+  font-size: 1em;
   text-align: center;
   max-width: 65ch;
   margin: 0.5rem;
+  max-width: 100%;
 }
 
 .galerie--grid {
@@ -444,7 +444,7 @@ body {
 
 .stats__container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   border-bottom: 3px solid #0606a5;
@@ -452,7 +452,8 @@ body {
 }
 
 .stats__img {
-  max-width: 40%;
+  max-width: 35%;
+  min-width: 20%;
 }
 
 .stats__carte {
@@ -464,8 +465,9 @@ body {
 
 .stats__chiffres {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
+  margin: 0.5rem;
 }
 
 .stats__chiffre {
@@ -477,23 +479,24 @@ body {
 .stats__h3 {
   font-family: "Felina";
   text-align: left;
-  font-size: 1.5em;
+  font-size: 3em;
 }
 
 .stats__h4 {
   font-family: "Felina";
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: left;
 }
 
 .stats__p {
   font-family: "ProbaPro";
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: left;
   margin-top: 0;
 }
 
 .stats__btn {
+  font-size: 1em;
   padding: 0.5rem 1rem;
   text-decoration: none;
   font-family: "Felina";
@@ -536,6 +539,20 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
+.equipe__h2 {
+  font-family: "Felina";
+  text-align: center;
+  max-width: 100%;
+  font-size: 2em;
+}
+
+.equipe__p {
+  font-family: "ProbaPro";
+  text-align: center;
+  max-width: 100%;
+  font-size: 1.5em;
+}
+
 .membres__wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -544,34 +561,22 @@ body {
   max-width: 100%;
 }
 
-.equipe__h2 {
-  font-family: "Felina";
-  text-align: center;
-  max-width: 100%;
-}
-
-.equipe__p {
-  font-family: "ProbaPro";
-  text-align: center;
-  max-width: 100%;
-}
-
 .equipe__carte {
   margin: 2rem 1rem;
   background-color: #f2f5f2;
-  padding: 1rem;
   border-radius: 1rem;
-  padding-bottom: 0rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   max-width: 25%;
   min-width: fit-content;
+  padding: 1rem;
 }
 
 .membre {
   position: relative;
-  top: -3rem;
+  bottom: 3rem;
   border-radius: 1rem;
-  max-width: 25ch;
+  width: 25ch;
+  max-width: 100%;
   text-align: center;
 }
 .membre img {
@@ -666,11 +671,13 @@ iframe {
   font-family: "Felina";
   text-align: center;
   margin: 0.5rem;
+  font-size: 1.5em;
 }
 
 .form__label {
   font-family: "ProbaPro";
   margin: 0.5rem;
+  font-size: 1em;
 }
 
 .form__button {
@@ -704,7 +711,7 @@ footer {
   background-position: bottom;
   margin-top: 2rem;
   padding: 2rem;
-  font-size: 2vw;
+  font-size: 1em;
 }
 
 .logo-links {

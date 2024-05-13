@@ -5,7 +5,6 @@ const searchButton = document.getElementById("search-btn");
 const clearButton = document.getElementById("clear-btn");
 
 
-
 const fetchData = async (searchName) => {
     console.log("searchName")
     try {
