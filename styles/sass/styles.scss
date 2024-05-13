@@ -455,22 +455,21 @@ body {
 }
 .stats__h3 {
 	font-family: $font-family_3;
-	font-size: 3vw;
 	text-align: left;
+	font-size: 1.5em;
 }
 .stats__h4 {
 	font-family: $font-family_3;
-	font-size: 2vw;
+	font-size: 1.5em;
 	text-align: left;
 }
 .stats__p {
 	font-family: $font-family_2;
-	font-size: 2vw;
+	font-size: 1em;
 	text-align: left;
 	margin-top: 0;
 }
 .stats__btn {
-	font-size: 2vw;
 	padding: 0.5rem 1rem;
 	text-decoration: none;
 	font-family: $font-family_3;
@@ -491,11 +490,12 @@ body {
 
 .equipe {
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: space-around;
 	margin: 2rem;
 	margin-bottom: 2rem;
+	max-width: 100%;
 }
 .equipe__text {
 	background-color: $color_3;
@@ -503,7 +503,6 @@ body {
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
-	justify-content: space-around;
 	margin-bottom: 3rem;
 	max-width: 100%;
 	border-radius: 1rem;
@@ -514,38 +513,37 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	align-items: stretch;
 	margin: 0 auto;
+	max-width: 100%;
 }
 .equipe__h2 {
 	font-family: $font-family_3;
-	font-size: 3vw;
 	text-align: center;
+	max-width: 100%;
 }
 .equipe__p {
 	font-family: $font-family_2;
-	font-size: 2vw;
 	text-align: center;
-	max-width: 65ch;
+	max-width: 100%;
 }
 .equipe__carte {
-	max-width: min-content;
 	margin: 2rem 1rem;
 	background-color: $color_3;
 	padding: 1rem;
 	border-radius: 1rem;
 	padding-bottom: 0rem;
 	box-shadow:$shadow-light;
+	max-width: 25%;
+	min-width: fit-content;
 }
 .membre {
 	position: relative;
 	top: -3rem;
 	border-radius: 1rem;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+	max-width: 25ch;
+	text-align: center;
 	img {
-		width: 200px;
+		max-width: 100%;
 		border-radius: 1rem;
 		background-color: $background-color_13;
 		box-shadow: $shadow-deep;
@@ -554,21 +552,14 @@ body {
 }
 .membre__h3 {
 	font-family: $font-family_3;
-	font-size: 2em;
-	text-align: center;
 	margin: 0.5rem;
 }
 .membre__h4 {
 	font-family: $font-family_3;
-	font-size: 1.5em;
-	text-align: center;
 	margin: 0.5rem;
 }
 .membre__p {
 	font-family: $font-family_2;
-	font-size: 1.5em;
-	text-align: center;
-	max-width: 65ch;
 }
 .map-form__container {
 	border-top: 3px solid #0606a5;
@@ -576,7 +567,7 @@ body {
 	margin: 2rem 2rem;
 	border-bottom: 3px solid #0606a5;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
@@ -622,7 +613,6 @@ iframe {
 	width: 100%;
 	>input {
 		font-family: $font-family_2;
-		font-size: 2vw;
 		width: 100%;
 	}
 	.errorMessage {
@@ -633,13 +623,11 @@ iframe {
 }
 .form__h3 {
 	font-family: $font-family_3;
-	font-size: 2vw;
 	text-align: center;
 	margin: 0.5rem;
 }
 .form__label {
 	font-family: $font-family_2;
-	font-size: 2vw;
 	margin: 0.5rem;
 }
 .form__button {
@@ -656,7 +644,6 @@ iframe {
 form {
 	span {
 		color: $color_6;
-		font-size: 1vw;
 		margin: 0.5rem;
 	}
 }
