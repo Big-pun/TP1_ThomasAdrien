@@ -245,7 +245,7 @@ body {
   width: 100%;
   height: auto;
   border-radius: 1rem;
-  max-width: 15vw;
+  max-width: 15em;
 }
 
 .result__texte {
@@ -302,7 +302,7 @@ body {
   flex-flow: row nowrap !important;
   align-items: center;
   justify-content: center;
-  font-size: 8vw;
+  font-size: 7vw;
   margin: 0 auto;
 }
 .intro__h1 h1 {
@@ -496,7 +496,7 @@ body {
 }
 
 .stats__btn {
-  font-size: 1em;
+  font-size: 1.5em;
   padding: 0.5rem 1rem;
   text-decoration: none;
   font-family: "Felina";
@@ -671,17 +671,17 @@ iframe {
   font-family: "Felina";
   text-align: center;
   margin: 0.5rem;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .form__label {
   font-family: "ProbaPro";
   margin: 0.5rem;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .form__button {
-  font-size: 2vw;
+  font-size: 1.5em;
   margin: 1rem 0rem;
   padding: 0.5vw 1vw;
   text-decoration: none;

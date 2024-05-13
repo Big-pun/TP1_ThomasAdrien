@@ -247,7 +247,7 @@ body {
 	width: 100%;
 	height: auto;
 	border-radius: 1rem;
-	max-width: 15vw;
+	max-width: 15em;
 }
 .result__texte {
 	display: flex;
@@ -298,7 +298,7 @@ body {
 	flex-flow: row nowrap !important;
 	align-items: center;
 	justify-content: center;
-	font-size: 8vw;
+	font-size: 7vw;
 	margin: 0 auto;
 	h1 {
 		text-shadow: 1vw 1vw 1vw black;
@@ -474,7 +474,7 @@ body {
 	margin-top: 0;
 }
 .stats__btn {
-	font-size: 1em;
+	font-size: 1.5em;
 	padding: 0.5rem 1rem;
 	text-decoration: none;
 	font-family: $font-family_3;
@@ -634,16 +634,16 @@ iframe {
 	font-family: $font-family_3;
 	text-align: center;
 	margin: 0.5rem;
-	font-size: 1.5em;
+	font-size: 2em;
 
 }
 .form__label {
 	font-family: $font-family_2;
 	margin: 0.5rem;
-	font-size: 1em;
+	font-size: 1.5em;
 }
 .form__button {
-	font-size: 2vw;
+	font-size: 1.5em;
 	margin: 1rem 0rem;
 	padding: 0.5vw 1vw;
 	text-decoration: none;
