@@ -1,0 +1,102 @@
+@use "variables" as *;
+
+
+.map-form__container {
+	border-top: 3px solid #0606a5;
+	padding: 2rem 0;
+	margin: 2rem 2rem;
+	border-bottom: 3px solid #0606a5;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+iframe {
+	border-radius: 1rem;
+	box-shadow: $shadow-light;
+	position: relative;
+	z-index: 1;
+    min-width: 50%;
+	max-width: 75%;
+	height: 50vw;
+}
+.form__container {
+    max-width: 100%;
+	z-index: 2;
+	background-color: $background-color_5;
+	padding: 1rem;
+	border-radius: 1rem;
+	box-shadow: $shadow-deep;
+}
+.form__wrapper {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin: 0 auto;
+	width: 100%;
+}
+.form__nom {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: flex-end;
+	width: 100%;
+	gap: 0.5rem;
+}
+.form__group {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 100%;
+	>input {
+		font-family: $font-family_2;
+		width: 100%;
+	}
+	.errorMessage {
+		color: $color_6;
+		font-size: 2vw;
+		height: 13px;
+	}
+}
+.form__h3 {
+	font-family: $font-family_3;
+	text-align: center;
+	margin: 0.5rem;
+	font-size: 2em;
+
+}
+.form__label {
+	font-family: $font-family_2;
+	margin: 0.5rem;
+	font-size: 1.5em;
+}
+.form__button {
+	font-size: 1.5em;
+	margin: 1rem 0rem;
+	padding: 0.5vw 1vw;
+	text-decoration: none;
+	font-family: $font-family_3;
+	background-color: $color_2;
+	color: $color_4;
+	border-radius: 0.5rem;
+	box-shadow: $shadow-light;
+}
+form {
+	span {
+		color: $color_6;
+		margin: 0.5rem;
+	}
+}
+.form__group.success {
+	input {
+		border-color: $border-color_1;
+	}
+}
+.form__group.error {
+	input {
+		border-color: $border-color_2;
+	}
+}

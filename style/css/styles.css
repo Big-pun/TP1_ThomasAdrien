@@ -18,21 +18,6 @@
   font-family: "Felina";
   src: url("../../fonts/FelinaT26-Gothic-Regular.otf") format("opentype");
 }
-/* Container */
-/* Body */
-/* Cacher le lien pour liseuse */
-/* CSS Navbar */
-/* Carousel */
-/* Fading animation */
-/* Section personnages */
-/* Introduction */
-/* Trucs */
-/* galerie */
-/* Statistiques */
-/* cartes */
-/* map & form */
-/* validation du form */
-/* footer */
 .container {
   max-width: 1200px;
   margin: 0 auto;

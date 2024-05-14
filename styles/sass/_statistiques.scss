@@ -1,0 +1,64 @@
+@use "variables" as *;
+
+
+.stats__container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 3px solid #0606a5;
+	margin: 2rem;
+}
+.stats__img {
+	max-width: 35%;
+	min-width: 20%;
+}
+.stats__carte {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: flex-start;
+	max-width: 100%;
+}
+.stats__chiffres {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 0.5rem;
+}
+.stats__chiffre {
+	display: flex;
+	flex-flow: column wrap;
+	max-width: 50%;
+}
+.stats__h3 {
+	font-family: $font-family_3;
+	text-align: left;
+	font-size: 3em;
+}
+.stats__h4 {
+	font-family: $font-family_3;
+	font-size: 2em;
+	text-align: left;
+}
+.stats__p {
+	font-family: $font-family_2;
+	font-size: 1.5em;
+	text-align: left;
+	margin-top: 0;
+}
+.stats__btn {
+	font-size: 1.5em;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	font-family: $font-family_3;
+	background-color: $color_7;
+	color: $color_1;
+	border-radius: 0.5rem;
+	box-shadow: $shadow-light;
+	margin: 2rem 0rem;
+	border: 1px solid #0606a5;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}

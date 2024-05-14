@@ -1,0 +1,84 @@
+@use "variables" as *;
+
+
+.background__cartes {
+	background-color: $color_7;
+}
+
+.equipe {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: space-around;
+	margin: 2rem;
+	margin-bottom: 2rem;
+	max-width: 100%;
+}
+.equipe__text {
+	background-color: $color_3;
+	margin-top: 2rem;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	margin-bottom: 3rem;
+	max-width: 100%;
+	border-radius: 1rem;
+	padding: 1rem;
+	box-shadow: $shadow-light;
+}
+
+.equipe__h2 {
+	font-family: $font-family_3;
+	text-align: center;
+	max-width: 100%;
+	font-size: 2em;
+}
+.equipe__p {
+	font-family: $font-family_2;
+	text-align: center;
+	max-width: 100%;
+	font-size: 1.5em;
+}
+.membres__wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.equipe__carte {
+	margin: 2rem 1rem;
+	background-color: $color_3;
+	border-radius: 1rem;
+	box-shadow:$shadow-light;
+	max-width: 25%;
+	min-width: fit-content;
+	padding: 1rem;
+	
+}
+.membre {
+	position: relative;
+	bottom: 3rem;
+	border-radius: 1rem;
+	width: 25ch;
+	max-width: 100%;
+	text-align: center;
+	img {
+		max-width: 100%;
+		border-radius: 1rem;
+		background-color: $background-color_13;
+		box-shadow: $shadow-deep;
+        margin: 0 auto;
+	}
+}
+.membre__h3 {
+	font-family: $font-family_3;
+	margin: 0.5rem;
+}
+.membre__h4 {
+	font-family: $font-family_3;
+	margin: 0.5rem;
+}
+.membre__p {
+	font-family: $font-family_2;
+}
