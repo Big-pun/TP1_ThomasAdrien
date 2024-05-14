@@ -36,3 +36,18 @@ $font-faces: (
     src: url($font-path) format($font-format);
   }
 };
+
+/* mixins */ 
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin hover-scale {
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}

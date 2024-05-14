@@ -18,6 +18,7 @@
   font-family: "Felina";
   src: url("../../fonts/FelinaT26-Gothic-Regular.otf") format("opentype");
 }
+/* mixins */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -32,6 +33,10 @@ body {
   display: none;
 }
 
+.header {
+  /* Cacher le hamburger menu */
+  /* Cacher la nav-bar et rapprocher le logo */
+}
 .header__background {
   background-image: url("../../img/header__background.svg");
   background-repeat: no-repeat;
@@ -42,8 +47,10 @@ body {
 .header__nav {
   max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 .header__logo {
   max-width: 15vw;
@@ -54,13 +61,15 @@ body {
 }
 .header__list {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
   max-width: 100%;
 }
 .header__list--show {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-flow: column wrap;
 }
 .header__item {
@@ -82,14 +91,15 @@ body {
 }
 .header__hamburger {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: space-around;
-  width: 4rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
   border-radius: 0.25rem;
 }
 .header__hamburger--hover:hover {
+  cursor: pointer;
   transform: scale(1.1);
 }
 .header__hamburger-line {
@@ -99,23 +109,20 @@ body {
   border-radius: 0.25rem;
   border: 2px solid #0606a5;
 }
-
-/* Hide hamburger menu for larger screens */
-@media (min-width: 961px) {
-  .header__hamburger {
+@media (width > 960px) {
+  .header .header__hamburger {
     display: none;
   }
 }
-/* Hide navigation items for smaller screens */
-@media (max-width: 960px) {
-  .header__nav {
+@media (width < 960px) {
+  .header .header__nav {
     justify-content: space-evenly;
   }
-  .header__list {
+  .header .header__list {
     display: none;
   }
 }
-.hamburger-wrapper {
+.header .hamburger-wrapper {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
