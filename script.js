@@ -1,7 +1,17 @@
-// TODO hamburger menu
+// Get the elements
+const hamburger = document.getElementById('hamburger');
+const headerList = document.getElementById('header-list');
 
-document.getElementById('hamburger').addEventListener('click', () => {
-    document.getElementById('header-list').classList.toggle('show');
+// Show the navbar when the hamburger is clicked
+hamburger.addEventListener('click', () => {
+    headerList.classList.remove('header__list');
+    headerList.classList.add('header__list--show');
+});
+
+// Hide the navbar when the cursor leaves the list
+headerList.addEventListener('mouseleave', () => {
+    headerList.classList.remove('header__list--show');
+    headerList.classList.add('header__list');
 });
 
 // TODO carousel d'images

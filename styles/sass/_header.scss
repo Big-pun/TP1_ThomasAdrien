@@ -1,97 +1,108 @@
 @use "variables" as *;
 
 .header {
-	&__background {
-		background-image: url("../../img/header__background.svg");
-		background-repeat: no-repeat;
-		background-size: 100%;
-		background-position: top;
-		padding: 2rem;
-	}
+  &__background {
+    background-image: url("../../img/header__background.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    padding: 2rem;
+  }
 
-	&__nav {
-		max-width: 100%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+  &__nav {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-	&__logo {
-		max-width: 15vw;
+  &__logo {
+    max-width: 15vw;
 
-		&--hover {
-			&:hover {
-				cursor: pointer;
-				transform: scale(1.1);
-			}
-		}
-	}
+    &--hover {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
 
-	&__list {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		align-items: center;
-		max-width: 100%;
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
 
-		&--show{
-			display: block;
+    &--show {
+      display: flex;
+      flex-flow: column wrap;
+    }
+  }
 
-		}
-	}
+  &__item {
+    max-width: 100%;
+    font-size: 3em;
+    margin: 1rem 1rem;
+    padding: 0 1rem;
+	text-align: center;
+    text-decoration: none;
+    font-family: $font-family_1;
+    background-color: $color_7;
+    color: $color_1;
+    border-radius: 1rem;
+    box-shadow: $shadow-light;
 
-	&__item {
-		max-width: 100%;
-		font-size: 3em;
-		margin: 1rem 1rem;
-		padding: 0 1rem;
-		text-decoration: none;
-		font-family: $font-family_1;
-		background-color: $color_7;
-		color: $color_1;
-		border-radius: 1rem;
-		box-shadow: $shadow-light;
+    &--hover {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
 
-		&--hover {
-			&:hover {
-				cursor: pointer;
-				transform: scale(1.1);
-			}
-		}
-	}
+  &__hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
 
-	&__hamburger {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		width: 4rem;
-		height: 2rem;
-		cursor: pointer;
-		border-radius: 0.25rem;
+    &--hover:hover {
+      transform: scale(1.1);
+    }
 
-		&-line {
-			max-width: 3rem;
-			height: 0.5rem;
-			background-color: $color_7;
-			border-radius: 0.25rem;
-			border: 2px solid $color_1;
-		}
-	}
+    &-line {
+      max-width: 3rem;
+      height: 0.5rem;
+      background-color: $color_7;
+      border-radius: 0.25rem;
+      border: 2px solid $color_1;
+    }
+  }
 }
 
 /* Hide hamburger menu for larger screens */
 @media (min-width: 961px) {
-    .header__hamburger {
-        display: none;
-    }
+  .header__hamburger {
+    display: none;
+  }
 }
 
 /* Hide navigation items for smaller screens */
 @media (max-width: 960px) {
-	.header__nav{
-		justify-content: space-evenly;
-	}
-    .header__list {
-        display: none;
-    }
+  .header__nav {
+    justify-content: space-evenly;
+  }
+  .header__list {
+    display: none;
+  }
+}
+
+.hamburger-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }

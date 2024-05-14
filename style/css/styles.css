@@ -60,13 +60,15 @@ body {
   max-width: 100%;
 }
 .header__list--show {
-  display: block;
+  display: flex;
+  flex-flow: column wrap;
 }
 .header__item {
   max-width: 100%;
   font-size: 3em;
   margin: 1rem 1rem;
   padding: 0 1rem;
+  text-align: center;
   text-decoration: none;
   font-family: "FighterZ";
   background-color: #ff6700;
@@ -86,6 +88,9 @@ body {
   height: 2rem;
   cursor: pointer;
   border-radius: 0.25rem;
+}
+.header__hamburger--hover:hover {
+  transform: scale(1.1);
 }
 .header__hamburger-line {
   max-width: 3rem;
@@ -110,6 +115,12 @@ body {
     display: none;
   }
 }
+.hamburger-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
 .carousel__container {
   max-width: 100%;
   position: relative;
