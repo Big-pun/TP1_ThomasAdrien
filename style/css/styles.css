@@ -54,21 +54,18 @@ body {
   background-position: top;
   padding: 2rem;
 }
-
 .header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .header__logo {
   max-width: 15vw;
 }
-.header__logologo--hover:hover {
+.header__logo--hover:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-
 .header__list {
   display: flex;
   flex-flow: row wrap;
@@ -76,7 +73,6 @@ body {
   align-items: center;
   max-width: 100%;
 }
-
 .header__item {
   max-width: 100%;
   font-size: 3em;
