@@ -1,3 +1,9 @@
+// TODO hamburger menu
+
+document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('header-list').classList.toggle('show');
+});
+
 // TODO carousel d'images
 
 let slideIndex = 1;
