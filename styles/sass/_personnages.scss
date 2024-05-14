@@ -1,17 +1,19 @@
 @use "variables" as *;
 
 
-.api-container {
-	border-top: 3px solid #0606a5;
-}
+.api {
+	&-container {
+		border-top: 3px solid #0606a5;
+	}
 
-.api-search {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-items: center;
-	margin: 2rem 0;
-	font-family: $font-family_2;
+	&-search {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 2rem 0;
+		font-family: $font-family_2;
+	}
 }
 
 .search {

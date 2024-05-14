@@ -9,36 +9,42 @@ footer {
 	padding: 2rem;
 	font-size: 1em;
 }
+
 .logo-links {
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
 	width: 100%;
 	margin: 0 auto;
-}
-.logo-links__logo {
-	max-width: 15vw;
-	img {
-		max-width: 100%;
+
+	&__logo {
+		max-width: 15vw;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__liens {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		padding-bottom: 2rem;
+		border-bottom: white 3px solid;
+
+		a {
+			font-family: $font-family_2;
+			color: $color_2;
+			padding: 0.5rem 1rem;
+			border-radius: 1rem;
+			box-shadow: $shadow-light;
+			background-color: $background-color_6;
+			margin: 0.5rem;
+		}
 	}
 }
-.logo-links__liens {
-	width: 100%;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	padding-bottom: 2rem;
-	border-bottom: white 3px solid;
-	a {
-		font-family: $font-family_2;
-		color: $color_2;
-		padding: 0.5rem 1rem;
-		border-radius: 1rem;
-		box-shadow: $shadow-light;
-		background-color: $background-color_6;
-        margin: 0.5rem;
-	}
-}
+
 .footer-down {
 	display: flex;
 	flex-flow: row wrap;
@@ -47,34 +53,40 @@ footer {
 	margin-top: 2rem;
 	font-family: $font-family_2;
 	max-width: 100%;
+
 	img {
 		max-width: 1.5em;
 	}
-}
-.footer-down__item {
-	padding: 0.5rem 1rem;
-	border-radius: 1rem;
-	box-shadow: $shadow-light;
-	color: $color_2;
-	max-width: 100%;
-	background-color: $background-color_6;
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	margin: 0.5rem;
-	a {
+
+	&__item {
+		padding: 0.5rem 1rem;
+		border-radius: 1rem;
+		box-shadow: $shadow-light;
 		color: $color_2;
-		text-decoration: none;
+		max-width: 100%;
+		background-color: $background-color_6;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		margin: 0.5rem;
+
+		a {
+			color: $color_2;
+			text-decoration: none;
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-evenly;
+		gap: 1rem;
 	}
 }
-.footer-down__items {
-	display: flex;
-	flex-flow: row nowrap;
-    justify-content: space-evenly;
-	gap: 1rem;
-}
+
 .footer-liens {
 	text-decoration: underline;
+
 	&:hover {
 		cursor: pointer;
 		transform: scale(1.1);

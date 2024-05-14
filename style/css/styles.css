@@ -85,7 +85,6 @@ body {
   margin: 0 auto;
   padding: 2rem 0rem;
 }
-
 .carousel__slides {
   display: none;
 }
@@ -94,7 +93,6 @@ body {
   height: auto;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
-
 .carousel__button {
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
@@ -111,12 +109,10 @@ body {
 .carousel__button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .carousel__dots {
   text-align: center;
   margin: 1rem;
 }
-
 .carousel__dot {
   cursor: pointer;
   height: 1rem;
@@ -128,15 +124,12 @@ body {
   margin: 0 0.5rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
-
-.active {
+.carousel__dot.active {
   background-color: #717171;
 }
-
-.dot:hover {
+.carousel__dot:hover {
   background-color: #717171;
 }
-
 .carousel__slide--fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -153,7 +146,6 @@ body {
 .api-container {
   border-top: 3px solid #0606a5;
 }
-
 .api-search {
   display: flex;
   flex-flow: column wrap;
@@ -321,11 +313,9 @@ body {
   flex-flow: column wrap;
   align-items: center;
 }
-
 .truc__img {
   width: 25%;
 }
-
 .truc__h3 {
   font-family: "Felina";
   font-size: 2em;
@@ -333,10 +323,9 @@ body {
   margin: 0 auto;
   max-width: 100%;
 }
-
 .truc__p {
   font-family: "ProbaPro";
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: center;
   max-width: 65ch;
   margin: 0.5rem;
@@ -345,15 +334,14 @@ body {
 
 .galerie--grid {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(16, 1fr);
   gap: 1.5rem;
   margin: 2rem;
   padding-bottom: 2rem;
   border-bottom: #0606a5 3px solid;
   max-width: 100%;
 }
-
 .galerie__item {
   border-radius: 1rem;
   box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56), -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -415,51 +403,43 @@ body {
   border-bottom: 3px solid #0606a5;
   margin: 2rem;
 }
-
 .stats__img {
   max-width: 35%;
   min-width: 20%;
 }
-
 .stats__carte {
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
   max-width: 100%;
 }
-
 .stats__chiffres {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   margin: 0.5rem;
 }
-
 .stats__chiffre {
   display: flex;
   flex-flow: column wrap;
   max-width: 50%;
 }
-
 .stats__h3 {
   font-family: "Felina";
   text-align: left;
   font-size: 3em;
 }
-
 .stats__h4 {
   font-family: "Felina";
   font-size: 2em;
   text-align: left;
 }
-
 .stats__p {
   font-family: "ProbaPro";
   font-size: 1.5em;
   text-align: left;
   margin-top: 0;
 }
-
 .stats__btn {
   font-size: 1.5em;
   padding: 0.5rem 1rem;
@@ -490,7 +470,6 @@ body {
   margin-bottom: 2rem;
   max-width: 100%;
 }
-
 .equipe__text {
   background-color: #f2f5f2;
   margin-top: 2rem;
@@ -503,29 +482,18 @@ body {
   padding: 1rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
-
 .equipe__h2 {
   font-family: "Felina";
   text-align: center;
   max-width: 100%;
   font-size: 2em;
 }
-
 .equipe__p {
   font-family: "ProbaPro";
   text-align: center;
   max-width: 100%;
   font-size: 1.5em;
 }
-
-.membres__wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
 .equipe__carte {
   margin: 2rem 1rem;
   background-color: #f2f5f2;
@@ -534,6 +502,14 @@ body {
   max-width: 25%;
   min-width: fit-content;
   padding: 1rem;
+}
+
+.membres__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .membre {
@@ -551,17 +527,14 @@ body {
   box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56), -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
 }
-
 .membre__h3 {
   font-family: "Felina";
   margin: 0.5rem;
 }
-
 .membre__h4 {
   font-family: "Felina";
   margin: 0.5rem;
 }
-
 .membre__p {
   font-family: "ProbaPro";
 }
@@ -581,8 +554,6 @@ body {
 iframe {
   border-radius: 1rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  position: relative;
-  z-index: 1;
   min-width: 50%;
   max-width: 75%;
   height: 50vw;
@@ -596,7 +567,6 @@ iframe {
   border-radius: 1rem;
   box-shadow: -12px 16px 38px -12px rgba(0, 0, 0, 0.56), -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
-
 .form__wrapper {
   display: flex;
   flex-flow: column wrap;
@@ -605,7 +575,6 @@ iframe {
   margin: 0 auto;
   width: 100%;
 }
-
 .form__nom {
   display: flex;
   flex-flow: row nowrap;
@@ -614,7 +583,6 @@ iframe {
   width: 100%;
   gap: 0.5rem;
 }
-
 .form__group {
   display: flex;
   flex-flow: column wrap;
@@ -631,20 +599,23 @@ iframe {
   font-size: 2vw;
   height: 13px;
 }
-
+.form__group.success input {
+  border-color: #09c372;
+}
+.form__group.error input {
+  border-color: #ff0000;
+}
 .form__h3 {
   font-family: "Felina";
   text-align: center;
   margin: 0.5rem;
   font-size: 2em;
 }
-
 .form__label {
   font-family: "ProbaPro";
   margin: 0.5rem;
   font-size: 1.5em;
 }
-
 .form__button {
   font-size: 1.5em;
   margin: 1rem 0rem;
@@ -656,18 +627,9 @@ iframe {
   border-radius: 0.5rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
-
-form span {
+.form span {
   color: #ff0000;
   margin: 0.5rem;
-}
-
-.form__group.success input {
-  border-color: #09c372;
-}
-
-.form__group.error input {
-  border-color: #ff0000;
 }
 
 footer {
@@ -686,14 +648,12 @@ footer {
   width: 100%;
   margin: 0 auto;
 }
-
 .logo-links__logo {
   max-width: 15vw;
 }
 .logo-links__logo img {
   max-width: 100%;
 }
-
 .logo-links__liens {
   width: 100%;
   display: flex;
@@ -724,7 +684,6 @@ footer {
 .footer-down img {
   max-width: 1.5em;
 }
-
 .footer-down__item {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
@@ -741,7 +700,6 @@ footer {
   color: white;
   text-decoration: none;
 }
-
 .footer-down__items {
   display: flex;
   flex-flow: row nowrap;
