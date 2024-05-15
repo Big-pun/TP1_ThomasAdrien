@@ -1,11 +1,22 @@
 @use "variables" as *;
 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin hover-scale {
+  &:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+  }
+}
 
 .stats {
 	&__container {
-		display: flex;
+		@include flex-center;
 		flex-flow: row wrap;
-		justify-content: space-around;
 		align-items: center;
 		border-bottom: 3px solid #0606a5;
 		margin: 2rem;
@@ -17,14 +28,14 @@
 	}
 
 	&__carte {
-		display: flex;
+		@include flex-center;
 		flex-flow: column wrap;
 		align-items: flex-start;
-		max-width: 100%;
 	}
 
 	&__chiffres {
 		display: flex;
+		align-items: center;
 		flex-flow: row wrap;
 		justify-content: space-between;
 		margin: 0.5rem;
@@ -33,6 +44,7 @@
 	&__chiffre {
 		display: flex;
 		flex-flow: column wrap;
+		align-items: flex-start;
 		max-width: 50%;
 	}
 
@@ -67,9 +79,6 @@
 		margin: 2rem 0rem;
 		border: 1px solid #0606a5;
 
-		&:hover {
-			cursor: pointer;
-			transform: scale(1.1);
-		}
+		@include hover-scale;
 	}
 }

@@ -1,121 +1,115 @@
 @use "variables" as *;
 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin hover-scale {
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+%btn-styles {
+  font-size: 1.5em;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-family: $font-family_3;
+  @include hover-scale;
+}
 
 .api {
-	&-container {
-		border-top: 3px solid #0606a5;
-	}
+    &-container {
+        border-top: 3px solid #0606a5;
+    }
 
-	&-search {
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: center;
-		align-items: center;
-		margin: 2rem 0;
-		font-family: $font-family_2;
-	}
+    &-search {
+        @include flex-center;
+        flex-flow: column wrap;
+        margin: 2rem 0;
+        font-family: $font-family_2;
+    }
 }
 
 .search {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: center;
+    @include flex-center;
+    flex-flow: row wrap;
 
-	&__input {
-		font-size: 1.5em;
-		padding: 0.5rem 1rem;
-		border: 1px solid #0606a5;
-		border-radius: 1rem;
-		margin: 1rem;
-		text-align: center;
-		box-shadow: $shadow-light;
-	}
+    &__input {
+        font-size: 1.5em;
+        padding: 0.5rem 1rem;
+        border: 1px solid #0606a5;
+        border-radius: 1rem;
+        margin: 1rem;
+        text-align: center;
+        box-shadow: $shadow-light;
+    }
 
-	&__input__label {
-		font-size: 2em;
-		margin: 1rem;
-		max-width: 25ch;
-		text-align: center;
-	}
+    &__input__label {
+        font-size: 2em;
+        margin: 1rem;
+        max-width: 25ch;
+        text-align: center;
+    }
 
-	&__btn {
-		font-size: 1.5em;
-		margin: 1rem;
-		padding: 0.5rem 1rem;
-		border-radius: 1rem;
-		font-family: $font-family_3;
-		background-color: $color_7;
-		color: $color_1;
-
-		&--hover {
-			&:hover {
-				cursor: pointer;
-				transform: scale(1.1);
-			}
-		}
-	}
+    &__btn {
+        @extend %btn-styles;
+        background-color: $color_7;
+        color: $color_1;
+    }
 }
 
 .result {
-	&__background {
-		background-color: $background-color_5;
-		padding: 1rem;
-	}
+    &__background {
+        background-color: $background-color_5;
+        padding: 1rem;
+    }
 
-	&__card {
-		max-width: fit-content;
-		display: flex;
-		flex-flow: column wrap;
-		align-items: center;
-		padding: 2rem;
-		background-color: $color_1;
-		margin: 0 auto;
-		border: 1vw solid #f2f5f2;
-		border-radius: 3rem;
-		box-shadow: $shadow-light;
-	}
+    &__card {
+        max-width: fit-content;
+        @include flex-center;
+        flex-flow: column wrap;
+        padding: 2rem;
+        background-color: $color_1;
+        margin: 0 auto;
+        border: 1vw solid #f2f5f2;
+        border-radius: 3rem;
+        box-shadow: $shadow-light;
+    }
 
-	&__img {
-		width: 100%;
-		height: auto;
-		border-radius: 1rem;
-		max-width: 15em;
-	}
+    &__img {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        max-width: 15em;
+    }
 
-	&__texte {
-		display: flex;
-		flex-flow: column wrap;
-		align-items: center;
-		font-size: 2em;
-		max-width: 65ch;
-		font-family: $font-family_2;
-		color: $color_3;
-		text-align: center;
-	}
+    &__texte {
+        @include flex-center;
+        flex-flow: column wrap;
+        font-size: 2em;
+        max-width: 65ch;
+        font-family: $font-family_2;
+        color: $color_3;
+        text-align: center;
+    }
 
-	&-bio {
-		margin: 1rem 0rem;
-	}
+    &-bio {
+        margin: 1rem 0rem;
+    }
 
-	&__name {
-		font-size: 2em;
-	}
+    &__name {
+        font-size: 2em;
+    }
 }
 
 .clear-btn {
-	margin: 2rem;
-	padding: 0.5rem 1rem;
-	border-radius: 1rem;
-	font-family: $font-family_3;
-	background-color: $color_3;
-	color: $color_4;
-	font-size: 1em;
-
-	&--hover {
-		&:hover {
-			cursor: pointer;
-			transform: scale(1.1);
-		}
-	}
+    @extend %btn-styles;
+    margin: 2rem;
+    background-color: $color_3;
+    color: $color_4;
+    font-size: 1em;
 }
