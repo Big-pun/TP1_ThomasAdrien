@@ -61,10 +61,6 @@ body {
   display: none;
 }
 
-.header {
-  /* Cacher le hamburger menu */
-  /* Cacher la nav-bar et rapprocher le logo */
-}
 .header__background {
   background-image: url("../../img/header__background.svg");
   background-repeat: no-repeat;
@@ -140,25 +136,27 @@ body {
   border-radius: 0.25rem;
   border: 2px solid #0606a5;
 }
-@media (min-width: 960px) {
-  .header .header__hamburger {
-    display: none;
-  }
-}
-@media (max-width: 960px) {
-  .header .header__nav {
-    justify-content: space-evenly;
-  }
-  .header .header__list {
-    display: none;
-  }
-}
 .header .hamburger-wrapper {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 }
 
+/* Cacher le hamburger menu */
+@media (min-width: 961px) {
+  .header__hamburger {
+    display: none;
+  }
+}
+/* Cacher la nav-bar et rapprocher le logo */
+@media (max-width: 960px) {
+  .header__nav {
+    justify-content: space-evenly;
+  }
+  .header__list {
+    display: none;
+  }
+}
 .carousel__container {
   max-width: 100%;
   position: relative;

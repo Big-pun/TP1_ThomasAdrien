@@ -62,7 +62,7 @@
     cursor: pointer;
     border-radius: 0.25rem;
 
-    &--hover{
+    &--hover {
       @include hover-scale;
     }
 
@@ -75,26 +75,26 @@
     }
   }
 
-  /* Cacher le hamburger menu */
-  @media (min-width : 960px) {
-    .header__hamburger {
-      display: none;
-    }
-  }
-
-  /* Cacher la nav-bar et rapprocher le logo */
-  @media ( max-width : 960px ) {
-    .header__nav {
-      justify-content: space-evenly;
-    }
-    .header__list {
-      display: none;
-    }
-  }
-
   .hamburger-wrapper {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+  }
+}
+
+/* Cacher le hamburger menu */
+@media (min-width: 961px) {
+  .header__hamburger {
+    display: none;
+  }
+}
+
+/* Cacher la nav-bar et rapprocher le logo */
+@media (max-width: 960px) {
+  .header__nav {
+    justify-content: space-evenly;
+  }
+  .header__list {
+    display: none;
   }
 }
