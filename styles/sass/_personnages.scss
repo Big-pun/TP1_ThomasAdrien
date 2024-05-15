@@ -1,26 +1,5 @@
 @use "variables" as *;
 
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin hover-scale {
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-  }
-}
-
-%btn-styles {
-  font-size: 1.5em;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  font-family: $font-family_3;
-  @include hover-scale;
-}
-
 .api {
     &-container {
         border-top: 3px solid #0606a5;

@@ -1,18 +1,5 @@
 @use "variables" as *;
 
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin hover-scale {
-  &:hover {
-	cursor: pointer;
-	transform: scale(1.1);
-  }
-}
-
 .stats {
 	&__container {
 		@include flex-center;
@@ -35,10 +22,9 @@
 
 	&__chiffres {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		margin: 0.5rem;
 	}
 
 	&__chiffre {
@@ -50,31 +36,25 @@
 
 	&__h3 {
 		font-family: $font-family_3;
-		text-align: left;
 		font-size: 3em;
 	}
 
 	&__h4 {
 		font-family: $font-family_3;
 		font-size: 2em;
-		text-align: left;
 	}
 
 	&__p {
 		font-family: $font-family_2;
 		font-size: 1.5em;
-		text-align: left;
 		margin-top: 0;
 	}
 
 	&__btn {
-		font-size: 1.5em;
-		padding: 0.5rem 1rem;
+		@extend %btn-styles;
 		text-decoration: none;
-		font-family: $font-family_3;
 		background-color: $color_7;
 		color: $color_1;
-		border-radius: 0.5rem;
 		box-shadow: $shadow-light;
 		margin: 2rem 0rem;
 		border: 1px solid #0606a5;

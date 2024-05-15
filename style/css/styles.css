@@ -19,6 +19,17 @@
   src: url("../../fonts/FelinaT26-Gothic-Regular.otf") format("opentype");
 }
 /* mixins */
+.stats__btn, .search__btn, .clear-btn {
+  font-size: 1.5em;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-family: "Felina";
+}
+.stats__btn:hover, .search__btn:hover, .clear-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -196,17 +207,6 @@ body {
     opacity: 1;
   }
 }
-.clear-btn, .search__btn {
-  font-size: 1.5em;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  font-family: "Felina";
-}
-.clear-btn:hover, .search__btn:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
 .api-container {
   border-top: 3px solid #0606a5;
 }
@@ -468,10 +468,9 @@ body {
 }
 .stats__chiffres {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin: 0.5rem;
 }
 .stats__chiffre {
   display: flex;
@@ -481,28 +480,21 @@ body {
 }
 .stats__h3 {
   font-family: "Felina";
-  text-align: left;
   font-size: 3em;
 }
 .stats__h4 {
   font-family: "Felina";
   font-size: 2em;
-  text-align: left;
 }
 .stats__p {
   font-family: "ProbaPro";
   font-size: 1.5em;
-  text-align: left;
   margin-top: 0;
 }
 .stats__btn {
-  font-size: 1.5em;
-  padding: 0.5rem 1rem;
   text-decoration: none;
-  font-family: "Felina";
   background-color: #ff6700;
   color: #0606a5;
-  border-radius: 0.5rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   margin: 2rem 0rem;
   border: 1px solid #0606a5;
