@@ -5,7 +5,7 @@
 		@include flex-center;
 		flex-flow: row wrap;
 		align-items: center;
-		border-bottom: 3px solid #0606a5;
+		border-bottom: $border-section;
 		margin: 2rem;
 	}
 

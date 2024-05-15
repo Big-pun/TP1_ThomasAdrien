@@ -4,9 +4,7 @@
 	&__container {
 		max-width: 100%;
 		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		@include flex-center;
 		flex-flow: row nowrap;
 		margin: 0 auto;
 		padding: 2rem 0rem;
@@ -71,11 +69,3 @@
 	}
 }
 
-@keyframes fade {
-	from {
-		opacity: 0.4;
-	}
-	to {
-		opacity: 1;
-	}
-}

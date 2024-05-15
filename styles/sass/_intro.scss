@@ -1,17 +1,16 @@
 @use "variables" as *;
 
+
 .intro {
 	text-align: center;
-	display: flex;
-	flex-flow: column wrap;
+	@include flex-column-center;
 	max-width: 100%;
 	margin: 2rem;
-	border-bottom: 3px solid #0606a5;
-
+	border-bottom: $border-section;
+  
 	&__titre {
-		display: flex;
-		flex-flow: column wrap;
-	}
+	  @include flex-column-center;
+	}  
 
 	&__h1 {
 		max-width: 100%;

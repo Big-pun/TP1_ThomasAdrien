@@ -76,14 +76,14 @@
   }
 
   /* Cacher le hamburger menu */
-  @media (width > 960px) {
+  @media (min-width : 960px) {
     .header__hamburger {
       display: none;
     }
   }
 
   /* Cacher la nav-bar et rapprocher le logo */
-  @media ( width < 960px ) {
+  @media ( max-width : 960px ) {
     .header__nav {
       justify-content: space-evenly;
     }

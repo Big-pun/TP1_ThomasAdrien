@@ -1,114 +1,96 @@
 @use "variables" as *;
 
-
 .map-form {
-	&__container {
-		border-top: 3px solid #0606a5;
-		padding: 2rem 0;
-		margin: 2rem 2rem;
-		border-bottom: 3px solid #0606a5;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-around;
-		align-items: center;
-		gap: 2rem;
-	}
+    &__container {
+        @include flex-center;
+        flex-flow: row wrap;
+        border-top: 3px solid #0606a5;
+        padding: 2rem 0;
+        margin: 2rem 2rem;
+        border-bottom: 3px solid #0606a5;
+        gap: 2rem;
+    }
 }
 
 iframe {
-	border-radius: 1rem;
-	box-shadow: $shadow-light;
-	min-width: 50%;
-	max-width: 75%;
-	height: 50vw;
+    border-radius: 1rem;
+    box-shadow: $shadow-light;
+    min-width: 50%;
+    max-width: 75%;
+    height: 50vw;
 }
 
 .form {
-	&__container {
-		max-width: 100%;
-		z-index: 2;
-		background-color: $background-color_5;
-		padding: 1rem;
-		border-radius: 1rem;
-		box-shadow: $shadow-deep;
-	}
+    &__container {
+        @extend %container-styles;
+        z-index: 2;
+        background-color: $background-color_5;
+    }
 
-	&__wrapper {
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: space-around;
-		align-items: flex-start;
-		margin: 0 auto;
-		width: 100%;
-	}
+    &__wrapper {
+        @include flex-column;
+        margin: 0 auto;
+        width: 100%;
+    }
 
-	&__nom {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-around;
-		align-items: flex-end;
-		width: 100%;
-		gap: 0.5rem;
-	}
+    &__nom {
+        @include flex-center;
+        flex-flow: row nowrap;
+        gap: 0.5rem;
+        width: 100%;
+    }
 
-	&__group {
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: space-around;
-		align-items: flex-start;
-		width: 100%;
+    &__group {
+        @include flex-column;
+        width: 100%;
 
-		>input {
-			font-family: $font-family_2;
-			width: 100%;
-		}
+        >input {
+            font-family: $font-family_2;
+            width: 100%;
+        }
 
-		.errorMessage {
-			color: $color_6;
-			font-size: 2vw;
-			height: 13px;
-		}
+        .errorMessage {
+            color: $color_6;
+            font-size: 2vw;
+            height: 13px;
+        }
 
-		&.success {
-			input {
-				border-color: $border-color_1;
-			}
-		}
+        &.success {
+            input {
+                border-color: $border-color_1;
+            }
+        }
 
-		&.error {
-			input {
-				border-color: $border-color_2;
-			}
-		}
-	}
+        &.error {
+            input {
+                border-color: $border-color_2;
+            }
+        }
+    }
 
-	&__h3 {
-		font-family: $font-family_3;
-		text-align: center;
-		margin: 0.5rem;
-		font-size: 2em;
-	}
+    &__h3 {
+        font-family: $font-family_3;
+        text-align: center;
+        margin: 0.5rem;
+        font-size: 2em;
+    }
 
-	&__label {
-		font-family: $font-family_2;
-		margin: 0.5rem;
-		font-size: 1.5em;
-	}
+    &__label {
+        font-family: $font-family_2;
+        margin: 0.5rem;
+        font-size: 1.5em;
+    }
 
-	&__button {
-		font-size: 1.5em;
-		margin: 1rem 0rem;
-		padding: 0.5vw 1vw;
-		text-decoration: none;
-		font-family: $font-family_3;
-		background-color: $color_2;
-		color: $color_4;
-		border-radius: 0.5rem;
-		box-shadow: $shadow-light;
-	}
+    &__button {
+        @extend %btn-styles;
+        margin: 1rem 0rem;
+        padding: 0.5vw 1vw;
+        background-color: $color_2;
+        color: $color_4;
+    }
 
-	span {
-		color: $color_6;
-		margin: 0.5rem;
-	}
+    span {
+        color: $color_6;
+        margin: 0.5rem;
+    }
 }

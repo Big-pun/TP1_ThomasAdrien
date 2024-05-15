@@ -17,8 +17,10 @@ $background-color_6: #717171;
 $background-color_13: #db9578;
 $border-color_1: #09c372;
 $border-color_2: #ff0000;
+$border-section: #0606a5 3px solid;
 $shadow-light:  0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 $shadow-deep: -12px 16px 38px -12px rgba(0, 0, 0, 0.56), -4px 4px 25px 0px rgba(0, 0, 0, 0.12), -8px 8px 10px -5px rgba(0, 0, 0, 0.2);
+
 
 $font-faces: (
   "Saiyan_sans-left": ("../../fonts/Saiyan-Sans-Left-Oblique.ttf", "truetype"),
@@ -38,13 +40,6 @@ $font-faces: (
 };
 
 /* mixins */ 
-
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @mixin hover-scale {
   &:hover {
     cursor: pointer;
@@ -52,10 +47,58 @@ $font-faces: (
   }
 }
 
+@mixin flex-center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin grid-position($row-start, $column-start, $row-end, $column-end) {
+  grid-row-start: $row-start;
+  grid-column-start: $column-start;
+  grid-row-end: $row-end;
+  grid-column-end: $column-end;
+}
+
+/* animation carousel */
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* placeholders */
+
 %btn-styles {
   font-size: 1.5em;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-family: $font-family_3;
   @include hover-scale;
+}
+
+%container-styles {
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: $shadow-deep;
 }

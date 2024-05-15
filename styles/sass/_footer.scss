@@ -1,94 +1,81 @@
 @use "variables" as *;
 
-
 footer {
-	background-image: url("../../img/svg-footer.svg");
-	background-repeat: no-repeat;
-	background-position: bottom;
-	margin-top: 2rem;
-	padding: 2rem;
-	font-size: 1em;
+  background-image: url("../../img/svg-footer.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-top: 2rem;
+  padding: 2rem;
+  font-size: 1em;
 }
 
 .logo-links {
-	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-	width: 100%;
-	margin: 0 auto;
+  @include flex-column-center;
+  width: 100%;
+  margin: 0 auto;
 
-	&__logo {
-		max-width: 15vw;
+  &__logo {
+    max-width: 15vw;
 
-		img {
-			max-width: 100%;
-		}
-	}
+    img {
+      max-width: 100%;
+    }
+  }
 
-	&__liens {
-		width: 100%;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-evenly;
-		padding-bottom: 2rem;
-		border-bottom: white 3px solid;
+  &__liens {
+    width: 100%;
+    @include flex-center;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    border-bottom: white 3px solid;
 
-		a {
-			font-family: $font-family_2;
-			color: $color_2;
-			padding: 0.5rem 1rem;
-			border-radius: 1rem;
-			box-shadow: $shadow-light;
-			background-color: $background-color_6;
-			margin: 0.5rem;
-		}
-	}
+    a {
+      font-family: $font-family_2;
+      color: $color_2;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      box-shadow: $shadow-light;
+      background-color: $background-color_6;
+      margin: 0.5rem;
+    }
+  }
 }
 
 .footer-down {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	margin-top: 2rem;
-	font-family: $font-family_2;
-	max-width: 100%;
+  @include flex-center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  font-family: $font-family_2;
+  max-width: 100%;
 
-	img {
-		max-width: 1.5em;
-	}
+  img {
+    max-width: 1.5em;
+  }
 
-	&__item {
-		padding: 0.5rem 1rem;
-		border-radius: 1rem;
-		box-shadow: $shadow-light;
-		color: $color_2;
-		max-width: 100%;
-		background-color: $background-color_6;
-		display: flex;
-		flex-flow: row nowrap;
-		align-items: center;
-		margin: 0.5rem;
+  &__item {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: $shadow-light;
+    color: $color_2;
+    max-width: 100%;
+    background-color: $background-color_6;
+    @include flex-center;
+    margin: 0.5rem;
 
-		a {
-			color: $color_2;
-			text-decoration: none;
-		}
-	}
+    a {
+      color: $color_2;
+      text-decoration: none;
+      @include hover-scale;
+    }
+  }
 
-	&__items {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-evenly;
-		gap: 1rem;
-	}
+  &__items {
+    @include flex-center;
+    gap: 1rem;
+  }
 }
 
 .footer-liens {
-	text-decoration: underline;
-
-	&:hover {
-		cursor: pointer;
-		transform: scale(1.1);
-	}
+  text-decoration: underline;
+  @include hover-scale;
 }
