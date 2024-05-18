@@ -280,14 +280,13 @@ body {
   width: 100%;
   height: auto;
   border-radius: 1rem;
-  max-width: 15em;
+  max-width: 20vw;
 }
 .result__texte {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
   font-size: 2em;
   max-width: 65ch;
   font-family: "ProbaPro";

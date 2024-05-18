@@ -63,12 +63,11 @@
         width: 100%;
         height: auto;
         border-radius: 1rem;
-        max-width: 15em;
+        max-width: 20vw;
     }
 
     &__texte {
         @include flex-center;
-        flex-flow: column wrap;
         font-size: 2em;
         max-width: 65ch;
         font-family: $font-family_2;
