@@ -671,7 +671,7 @@ iframe {
 }
 .form__group .errorMessage {
   color: #ff0000;
-  font-size: 2vw;
+  font-size: 1vw;
   height: 13px;
 }
 .form__group.success input {
@@ -829,4 +829,7 @@ footer {
   text-align: center;
   margin: 2rem;
   font-family: "ProbaPro";
+}
+.confirmation__p a {
+  color: black;
 }
