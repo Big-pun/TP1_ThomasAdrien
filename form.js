@@ -4,7 +4,7 @@ const validateForm = () => {
 
     let noErrors = true;
 
-    let form = document.getElementById("form");
+    
     let nameInput = document.getElementById("name");
     let firstNameInput = document.getElementById("first-name");
     let emailInput = document.getElementById("email");
@@ -91,6 +91,7 @@ const setSuccessFor = (input) => {
 addEventListener("submit", (e) => {
     e.preventDefault();
     if (validateForm()) {
+        const form = document.getElementById("form");
         form.submit();
     }
 });

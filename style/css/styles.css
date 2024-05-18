@@ -690,7 +690,11 @@ iframe {
   padding: 0.2rem 0.5rem;
 }
 .form__label {
+  color: white;
   font-family: "ProbaPro";
+  background-color: black;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
   margin: 0.5rem;
   font-size: 1em;
   font-weight: bolder;

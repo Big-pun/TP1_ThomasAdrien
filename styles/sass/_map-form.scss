@@ -80,10 +80,15 @@ iframe {
     }
 
     &__label {
+        color: $color_2;
         font-family: $font-family_2;
+        background-color: $color_4;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
         margin: 0.5rem;
         font-size: 1em;
         font-weight: bolder;
+
     }
 
     &__button {
