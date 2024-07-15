@@ -16,4 +16,4 @@ self.clients.claim();
 self.addEventListener('fetch', (evt) => {
 console.log('[ServiceWorker] Fetch', evt.request.url);
 //Add fetch event handler here.
-}
+});
