@@ -28,7 +28,7 @@
       "type": "image/png",
       "sizes": "502x523",
       "label": "app screenshot",
-      "form_factor": "handset"
+      "form_factor": "narrow"
     },
     {
       "src": "img/screenshots/screenshot-2.png",
