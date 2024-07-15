@@ -23,11 +23,19 @@
   "display": "standalone",
   "theme_color": "#DAA520",
   "screenshots": [
-     {
-        "src": "img/screenshots/screenshot.png",
-        "type": "image/png",
-        "sizes": "502x523",
-        "label": "app screenshot"
-      }
+    {
+      "src": "img/screenshots/screenshot.png",
+      "type": "image/png",
+      "sizes": "502x523",
+      "label": "app screenshot",
+      "form_factor": "handset"
+    },
+    {
+      "src": "img/screenshots/screenshot-2.png",
+      "type": "image/png",
+      "sizes": "688x523",
+      "label": "app screenshot",
+      "form_factor": "wide"
+    }
   ]
 }
